@@ -18,7 +18,14 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    /* Linting extra */
+    "noImplicitReturns": true,
+    "allowUnreachableCode": false,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
