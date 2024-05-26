@@ -11,3 +11,5 @@ export const searchApartmentLink: NavLinkData = {
   text: 'Search your apartment',
   href: '/listings',
 };
+
+export const MOCK_NAV_LINKS: NavLinkData[] = [homeLink];
