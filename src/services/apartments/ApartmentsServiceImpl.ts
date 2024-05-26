@@ -1,86 +1,55 @@
 import { Apartment } from '../../@types/apartmentTypes';
-import { isValidURL } from '../../helpers/appHttp';
 import { IApartmentsService } from './IApartmentsService';
 
 export class ApartmentsServiceImpl implements IApartmentsService {
-  private urlAPI: string;
-  private abortController: AbortController;
+  private baseUrl: string;
+  private signal: AbortSignal;
 
-  constructor(apiAbort: AbortController) {
+  constructor(signalAS: AbortSignal) {
     const versionAPI = import.meta.env.VITE_API_VERSION;
     const baseURL = import.meta.env.VITE_API_BASE_URL;
 
-    this.urlAPI = `${baseURL}/${versionAPI}/apartments` || '';
-    this.abortController = apiAbort;
+    this.baseUrl = `${baseURL}/${versionAPI}/apartments` || '';
+    this.signal = signalAS;
   }
 
-  async findAll() {
-    // Abort fetch
-    const { signal } = this.abortController;
+  async findAll(): Promise<Apartment[]> {
+    const options: RequestInit = {
+      method: 'GET',
+      headers: {
+        accept: 'application/json',
+      },
+      signal: this.signal,
+    };
 
-    // Body
-    let body: Apartment[] = [];
+    const urlResource = `${this.baseUrl}`;
+    const response: Response = await fetch(urlResource, options);
+    console.log("🚀 ~ ApartmentsServiceImpl ~ findAll ~ urlResource:", urlResource)
 
-    try {
-      if (isValidURL(this.urlAPI)) {
-        const response = await fetch(this.urlAPI, { signal });
-
-        if (response.ok) {
-          body = await response.json();
-        } else if (response.status === 404) {
-          throw new Error('User not found.');
-        } else if (response.status === 500) {
-          throw new Error('Internal server error.');
-        } else {
-          // Handle other errors
-          throw new Error(`An error occurred:, ${response.status}`);
-        }
-      } else {
-        throw new Error(`URL is invalid!:, ${this.urlAPI}`);
-      }
-    } catch (error) {
-      if (error instanceof TypeError && error.message === 'Failed to fetch') {
-        throw new Error('Failed to fetch. Please check your network connection.');
-      }
-
-      throw error;
+    if (response.status === 200) {
+      return response.json();
     }
 
-    return body;
+    return Promise.reject(response);
   }
 
-  async findById(id = '0'): Promise<Apartment | null> {
-    // Abort fetch
-    const { signal } = this.abortController;
+  async findById(id: string): Promise<Apartment | null> {
+    const options: RequestInit = {
+      method: 'GET',
+      headers: {
+        accept: 'application/json',
+      },
+      signal: this.signal,
+    };
 
-    // Body
-    let body: Apartment | null = null;
+    const urlResource = `${this.baseUrl}/${id}`;
+    const response: Response = await fetch(urlResource, options);
+    console.log("🚀 ~ ApartmentsServiceImpl ~ findById ~ urlResource:", urlResource)
 
-    try {
-      if (isValidURL(this.urlAPI)) {
-        const response = await fetch(`${this.urlAPI}/${id}`, { signal });
-
-        if (response.ok) {
-          body = await response.json();
-        } else if (response.status === 404) {
-          throw new Error('User not found.');
-        } else if (response.status === 500) {
-          throw new Error('Internal server error.');
-        } else {
-          // Handle other errors
-          throw new Error(`An error occurred:, ${response.status}`);
-        }
-      } else {
-        throw new Error(`URL is invalid!:, ${this.urlAPI}`);
-      }
-    } catch (error) {
-      if (error instanceof TypeError && error.message === 'Failed to fetch') {
-        throw new Error('Failed to fetch. Please check your network connection.');
-      }
-
-      throw error;
+    if (response.status === 200) {
+      return response.json();
     }
 
-    return body;
+    return Promise.reject(response);
   }
 }
