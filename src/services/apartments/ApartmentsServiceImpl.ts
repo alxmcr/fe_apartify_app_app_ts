@@ -24,7 +24,7 @@ export class ApartmentsServiceImpl implements IApartmentsService {
 
     const urlResource = `${this.baseUrl}`;
     const response: Response = await fetch(urlResource, options);
-    console.log("🚀 ~ ApartmentsServiceImpl ~ findAll ~ urlResource:", urlResource)
+    console.log('🚀 ~ ApartmentsServiceImpl ~ findAll ~ urlResource:', urlResource);
 
     if (response.status === 200) {
       return response.json();
@@ -44,7 +44,7 @@ export class ApartmentsServiceImpl implements IApartmentsService {
 
     const urlResource = `${this.baseUrl}/${id}`;
     const response: Response = await fetch(urlResource, options);
-    console.log("🚀 ~ ApartmentsServiceImpl ~ findById ~ urlResource:", urlResource)
+    console.log('🚀 ~ ApartmentsServiceImpl ~ findById ~ urlResource:', urlResource);
 
     if (response.status === 200) {
       return response.json();

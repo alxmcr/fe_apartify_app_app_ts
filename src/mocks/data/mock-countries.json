@@ -1,22 +1,22 @@
 [
-    {
-        "model": "app_as_api.country",
-        "pk": 1,
-        "fields": {
-            "co_name": "Mexico",
-            "co_abbr": "MX",
-            "co_url": "",
-            "co_alt": ""
-        }
-    },
-    {
-        "model": "app_as_api.country",
-        "pk": 2,
-        "fields": {
-            "co_name": "Colombia",
-            "co_abbr": "COL",
-            "co_url": "",
-            "co_alt": ""
-        }
+  {
+    "model": "app_as_api.country",
+    "pk": 1,
+    "fields": {
+      "co_name": "Mexico",
+      "co_abbr": "MX",
+      "co_url": "",
+      "co_alt": ""
     }
+  },
+  {
+    "model": "app_as_api.country",
+    "pk": 2,
+    "fields": {
+      "co_name": "Colombia",
+      "co_abbr": "COL",
+      "co_url": "",
+      "co_alt": ""
+    }
+  }
 ]
