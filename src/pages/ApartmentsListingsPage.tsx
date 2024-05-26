@@ -1,5 +1,5 @@
 export default function ApartmentsListingsPage() {
-    return (
+  return (
     <main>
       <h1>Listings</h1>
     </main>

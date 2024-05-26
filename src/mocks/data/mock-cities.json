@@ -1,32 +1,32 @@
 [
-    {
-        "model": "app_as_api.city",
-        "pk": 1,
-        "fields": {
-            "ci_name": "Ciudad de México",
-            "ci_abbr": "CDMX",
-            "ci_url": "",
-            "ci_alt": ""
-        }
-    },
-    {
-        "model": "app_as_api.city",
-        "pk": 2,
-        "fields": {
-            "ci_name": "Monterrey",
-            "ci_abbr": "MTY",
-            "ci_url": "",
-            "ci_alt": ""
-        }
-    },
-    {
-        "model": "app_as_api.city",
-        "pk": 3,
-        "fields": {
-            "ci_name": "Coyoacán",
-            "ci_abbr": "COY",
-            "ci_url": "",
-            "ci_alt": ""
-        }
+  {
+    "model": "app_as_api.city",
+    "pk": 1,
+    "fields": {
+      "ci_name": "Ciudad de México",
+      "ci_abbr": "CDMX",
+      "ci_url": "",
+      "ci_alt": ""
     }
+  },
+  {
+    "model": "app_as_api.city",
+    "pk": 2,
+    "fields": {
+      "ci_name": "Monterrey",
+      "ci_abbr": "MTY",
+      "ci_url": "",
+      "ci_alt": ""
+    }
+  },
+  {
+    "model": "app_as_api.city",
+    "pk": 3,
+    "fields": {
+      "ci_name": "Coyoacán",
+      "ci_abbr": "COY",
+      "ci_url": "",
+      "ci_alt": ""
+    }
+  }
 ]

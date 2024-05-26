@@ -1,42 +1,42 @@
 [
-    {
-        "model": "app_as_api.investment",
-        "pk": 1,
-        "fields": {
-            "in_type": "Currency",
-            "in_name": "Renta diaria corta estancia",
-            "in_icon_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1627708184/Portfolio/appartify-assets/svg/key_vtnoyk.svg",
-            "in_icon_color": "#0075f2"
-        }
-    },
-    {
-        "model": "app_as_api.investment",
-        "pk": 2,
-        "fields": {
-            "in_type": "Number",
-            "in_name": "Tasa de ocupación",
-            "in_icon_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1627708184/Portfolio/appartify-assets/svg/key_vtnoyk.svg",
-            "in_icon_color": "#ef8354"
-        }
-    },
-    {
-        "model": "app_as_api.investment",
-        "pk": 3,
-        "fields": {
-            "in_type": "Currency",
-            "in_name": "Renta mensual larga estancia",
-            "in_icon_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1627708184/Portfolio/appartify-assets/svg/key_vtnoyk.svg",
-            "in_icon_color": "#f32321"
-        }
-    },
-    {
-        "model": "app_as_api.investment",
-        "pk": 4,
-        "fields": {
-            "in_type": "Currency",
-            "in_name": "Mantenimiento mensual",
-            "in_icon_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1627708184/Portfolio/appartify-assets/svg/key_vtnoyk.svg",
-            "in_icon_color": "#3ea923"
-        }
+  {
+    "model": "app_as_api.investment",
+    "pk": 1,
+    "fields": {
+      "in_type": "Currency",
+      "in_name": "Renta diaria corta estancia",
+      "in_icon_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1627708184/Portfolio/appartify-assets/svg/key_vtnoyk.svg",
+      "in_icon_color": "#0075f2"
     }
+  },
+  {
+    "model": "app_as_api.investment",
+    "pk": 2,
+    "fields": {
+      "in_type": "Number",
+      "in_name": "Tasa de ocupación",
+      "in_icon_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1627708184/Portfolio/appartify-assets/svg/key_vtnoyk.svg",
+      "in_icon_color": "#ef8354"
+    }
+  },
+  {
+    "model": "app_as_api.investment",
+    "pk": 3,
+    "fields": {
+      "in_type": "Currency",
+      "in_name": "Renta mensual larga estancia",
+      "in_icon_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1627708184/Portfolio/appartify-assets/svg/key_vtnoyk.svg",
+      "in_icon_color": "#f32321"
+    }
+  },
+  {
+    "model": "app_as_api.investment",
+    "pk": 4,
+    "fields": {
+      "in_type": "Currency",
+      "in_name": "Mantenimiento mensual",
+      "in_icon_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1627708184/Portfolio/appartify-assets/svg/key_vtnoyk.svg",
+      "in_icon_color": "#3ea923"
+    }
+  }
 ]

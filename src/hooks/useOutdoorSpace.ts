@@ -8,8 +8,7 @@ export const useOutdoorSpace = (ou_outdoor_space = 0) => {
   const [loadingOutdoorSpace, setLoadingOutdoorSpace] = useState(false);
   const versionAPI = import.meta.env.VITE_API_VERSION;
   const baseURL = import.meta.env.VITE_API_BASE_URL;
-  const url =
-    `${baseURL}/${versionAPI}/outdoor_spaces/${ou_outdoor_space}` || '';
+  const url = `${baseURL}/${versionAPI}/outdoor_spaces/${ou_outdoor_space}` || '';
 
   useEffect(() => {
     // Abort fetch

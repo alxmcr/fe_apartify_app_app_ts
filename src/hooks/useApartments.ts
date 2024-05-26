@@ -6,12 +6,8 @@ import { ApartmentsServiceImpl } from '../services/apartments/ApartmentsServiceI
 export const useApartments = () => {
   const abortControllerRef = React.useRef<AbortController | null>(null);
   const [apartments, setApartments] = React.useState<Apartment[]>([]);
-  const [errorApartments, setErrorApartments] = React.useState<Error | null>(
-    null,
-  );
-  const [loadingApartments, setLoadingApartments] = React.useState(
-    LoadingStates.IDLE,
-  );
+  const [errorApartments, setErrorApartments] = React.useState<Error | null>(null);
+  const [loadingApartments, setLoadingApartments] = React.useState(LoadingStates.IDLE);
 
   useEffect(() => {
     const abortController = new AbortController();
@@ -21,7 +17,7 @@ export const useApartments = () => {
       try {
         setLoadingApartments(LoadingStates.PENDING);
 
-        const service = new ApartmentsServiceImpl(abortController);
+        const service = new ApartmentsServiceImpl(abortController.signal);
         const apiApartments = await service.findAll();
 
         setApartments(apiApartments);

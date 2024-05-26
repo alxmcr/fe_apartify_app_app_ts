@@ -17,7 +17,7 @@ export const useApartment = (id = '0') => {
       try {
         setLoadingApartment(LoadingStates.PENDING);
 
-        const service = new ApartmentsServiceImpl(abortController);
+        const service = new ApartmentsServiceImpl(abortController.signal);
         const apiApartment = await service.findById(id);
 
         setApartment(apiApartment);
