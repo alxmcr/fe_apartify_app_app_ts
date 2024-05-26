@@ -1,5 +1,4 @@
 import { Apartment } from '../../@types/apartmentTypes';
-import { isValidURL } from '../../helpers/appHttp';
 import { IApartmentsService } from './IApartmentsService';
 
 export class ApartmentsServiceImpl implements IApartmentsService {
@@ -23,7 +22,9 @@ export class ApartmentsServiceImpl implements IApartmentsService {
       signal: this.signal,
     };
 
-    const response: Response = await fetch(`${this.baseUrl}`, options);
+    const urlResource = `${this.baseUrl}`;
+    const response: Response = await fetch(urlResource, options);
+    console.log("🚀 ~ ApartmentsServiceImpl ~ findAll ~ urlResource:", urlResource)
 
     if (response.status === 200) {
       return response.json();
@@ -41,7 +42,9 @@ export class ApartmentsServiceImpl implements IApartmentsService {
       signal: this.signal,
     };
 
-    const response: Response = await fetch(`${this.baseUrl}/${id}`, options);
+    const urlResource = `${this.baseUrl}/${id}`;
+    const response: Response = await fetch(urlResource, options);
+    console.log("🚀 ~ ApartmentsServiceImpl ~ findById ~ urlResource:", urlResource)
 
     if (response.status === 200) {
       return response.json();
