@@ -75,6 +75,7 @@ export default {
       fontFamily: {
         display: ["Coustard", "sans-serif"],
         body: ["Poppins", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
         merriweather: ["Merriweather", "sans-serif"],
         mulish: ["Mulish", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
