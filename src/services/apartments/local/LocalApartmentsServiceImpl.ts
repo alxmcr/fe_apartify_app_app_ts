@@ -1,3 +1,4 @@
+import { mapperListLocalApartmentsDataToListApt } from '../../../@mappers/mapperLocalApartments';
 import { Apartment } from '../../../@types/service/apartmentTypes';
 import { LocalApartmentData } from '../../../@types/service/serviceTypes';
 import mockLocalApartments from '../../../mocks/data/local/mock-local-apartments.json';
@@ -8,9 +9,7 @@ export class LocalApartmentsServiceImpl implements ILocalApartmentsService {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         try {
-          const response = mockLocalApartments as LocalApartmentData[];
-          console.log('🚀 ~ LocalApartmentsServiceImpl ~ setTimeout ~ response:', response);
-          resolve([]);
+          resolve(mapperListLocalApartmentsDataToListApt(mockLocalApartments as LocalApartmentData[]));
         } catch (error) {
           reject(error);
         }
