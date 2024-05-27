@@ -1,13 +1,12 @@
 import { Apartment } from '../../../@types/service/apartmentTypes';
 import { ILocalApartmentsService } from './ILocalApartmentsService';
-import mockApartments from '../../../mocks/data/mock-apartments.json';
 
 export class LocalApartmentsServiceImpl implements ILocalApartmentsService {
   async findAll(): Promise<Apartment[]> {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         try {
-          resolve(mockApartments as Apartment[]);
+          resolve([]);
         } catch (error) {
           reject(error);
         }
@@ -16,9 +15,14 @@ export class LocalApartmentsServiceImpl implements ILocalApartmentsService {
   }
 
   async findById(id: string): Promise<Apartment | null> {
+    console.log('🚀 ~ LocalApartmentsServiceImpl ~ findById ~ id:', id);
     return new Promise((resolve, reject) => {
       setTimeout(() => {
-        resolve([...productsDany, ...productsEmily]);
+        try {
+          resolve(null);
+        } catch (error) {
+          reject(error);
+        }
       }, 300);
     });
   }
