@@ -13,6 +13,12 @@ import {
 
 // -- Common --
 
+export type NavLinkData = {
+  id: string;
+  text: string;
+  href: string;
+};
+
 export interface AppBrandNavProps {
   showMenu: boolean;
   setShowMenu: (showMenu: boolean) => void;
