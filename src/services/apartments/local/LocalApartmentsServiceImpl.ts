@@ -1,9 +1,9 @@
 import {
-  mapperListLocalApartmentsDataToListApt,
-  mapperLocalApartmentDataToApartment,
+  mapperMockListLocalApartmentsDataToListApt,
+  mapperMockApartmentDataToLocalApartment,
 } from '../../../@mappers/mapperLocalApartments';
 import { Apartment } from '../../../@types/service/apartmentTypes';
-import { LocalApartmentData } from '../../../@types/service/serviceTypes';
+import { MockApartmentData } from '../../../@types/service/serviceTypes';
 import mockLocalApartments from '../../../mocks/data/local/mock-local-apartments.json';
 import mockLocalPopularListings from '../../../mocks/data/local/mock-local-popular-listings.json';
 import mockLocalApartment001 from '../../../mocks/data/local/apartments/mock-local-apart-001.json';
@@ -16,7 +16,7 @@ export class LocalApartmentsServiceImpl implements ILocalApartmentsService {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         try {
-          resolve(mapperListLocalApartmentsDataToListApt(mockLocalApartments as LocalApartmentData[]));
+          resolve(mapperMockListLocalApartmentsDataToListApt(mockLocalApartments as MockApartmentData[]));
         } catch (error) {
           reject(error);
         }
@@ -28,7 +28,7 @@ export class LocalApartmentsServiceImpl implements ILocalApartmentsService {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         try {
-          resolve(mapperListLocalApartmentsDataToListApt(mockLocalPopularListings as LocalApartmentData[]));
+          resolve(mapperMockListLocalApartmentsDataToListApt(mockLocalPopularListings as MockApartmentData[]));
         } catch (error) {
           reject(error);
         }
@@ -43,13 +43,13 @@ export class LocalApartmentsServiceImpl implements ILocalApartmentsService {
         try {
           switch (id) {
             case '1':
-              resolve(mapperLocalApartmentDataToApartment(mockLocalApartment001 as LocalApartmentData));
+              resolve(mapperMockApartmentDataToLocalApartment(mockLocalApartment001 as MockApartmentData));
               break;
             case '2':
-              resolve(mapperLocalApartmentDataToApartment(mockLocalApartment002 as LocalApartmentData));
+              resolve(mapperMockApartmentDataToLocalApartment(mockLocalApartment002 as MockApartmentData));
               break;
             case '3':
-              resolve(mapperLocalApartmentDataToApartment(mockLocalApartment003 as LocalApartmentData));
+              resolve(mapperMockApartmentDataToLocalApartment(mockLocalApartment003 as MockApartmentData));
               break;
           }
         } catch (error) {

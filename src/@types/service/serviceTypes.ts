@@ -5,27 +5,50 @@ export type ResponseLocalApartmentData = {
 };
 
 export type LocalApartmentData = {
+  ap_apartment: number;
+  ap_description: string;
+  ap_floor_number: number;
+  ap_cost_offer: string;
+  ap_cost_list: string;
+  ap_is_remodeling: boolean;
+  ap_latitude: number;
+  ap_longitude: number;
+  ap_url: string;
+  ap_alt: string;
+  ap_street_name: string;
+  ap_ext_number: string;
+  ap_int_number: string;
+  rel_neighborhood: Neighborhood;
+  rel_city: City;
+  rel_city_hall: CityHall;
+  rel_country: Country;
+  rel_state: State;
+};
+
+export type LocalApartmentFields = {
+  ap_description: string;
+  ap_floor_number: number;
+  ap_cost_offer: string;
+  ap_cost_list: string;
+  ap_is_remodeling: boolean;
+  ap_latitude: number;
+  ap_longitude: number;
+  ap_url: string;
+  ap_alt: string;
+  ap_street_name: string;
+  ap_ext_number: string;
+  ap_int_number: string;
+  rel_neighborhood: Neighborhood;
+  rel_city: City;
+  rel_city_hall: CityHall;
+  rel_country: Country;
+  rel_state: State;
+};
+
+export type MockApartmentData = {
   model: 'app_as_api.apartment';
-  pk: 1;
-  fields: {
-    ap_description: string;
-    ap_floor_number: number;
-    ap_cost_offer: string;
-    ap_cost_list: string;
-    ap_is_remodeling: boolean;
-    ap_latitude: number;
-    ap_longitude: number;
-    ap_url: string;
-    ap_alt: string;
-    ap_street_name: string;
-    ap_ext_number: string;
-    ap_int_number: string;
-    rel_neighborhood: Neighborhood;
-    rel_city: City;
-    rel_city_hall: CityHall;
-    rel_country: Country;
-    rel_state: State;
-  };
+  pk: number;
+  fields: LocalApartmentFields;
 };
 
 export type RemoteApartmentData = {
