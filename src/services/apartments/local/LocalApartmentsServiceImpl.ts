@@ -23,19 +23,19 @@ export class LocalApartmentsServiceImpl implements ILocalApartmentsService {
     });
   }
 
-  async findById(id: string): Promise<Apartment | null> {
+  async findById(id = '0'): Promise<Apartment | null> {
     console.log('🚀 ~ LocalApartmentsServiceImpl ~ findById ~ id:', id);
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         try {
           switch (id) {
-            case 1:
+            case '1':
               resolve(mapperLocalApartmentDataToApartment(mockLocalApartment001 as LocalApartmentData));
               break;
-            case 2:
+            case '2':
               resolve(mapperLocalApartmentDataToApartment(mockLocalApartment002 as LocalApartmentData));
               break;
-            case 3:
+            case '3':
               resolve(mapperLocalApartmentDataToApartment(mockLocalApartment003 as LocalApartmentData));
               break;
           }
