@@ -1,7 +1,7 @@
-import { useLocalApartment } from "../hooks/apartments/local/useLocalApartments";
+import { useLocalApartments } from '../hooks/apartments/local/useLocalApartments';
 
 export default function ApartmentsListingsPage() {
-  const { apartments, errorApartments, loadingApartments } = useLocalApartments()
+  const { apartments, errorApartments, loadingApartments } = useLocalApartments();
 
   return (
     <main>
