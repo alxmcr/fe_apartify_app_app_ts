@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Apartment } from '../@types/apartmentTypes';
 import { LoadingStates } from '../@types/enumsService';
-import { RemoteApartmentsServiceImpl } from '../services/apartments-remote/RemoteApartmentsServiceImpl';
+import { RemoteApartmentsServiceImpl } from '../services/apartments/remote/RemoteApartmentsServiceImpl';
 
 export const useApartment = (id = '0') => {
   const abortControllerRef = React.useRef<AbortController | null>(null);
