@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { appHttp } from '../helpers/appHttp';
-import { OutdoorSpace } from '../@types/apartmentTypes';
+import { OutdoorSpace } from '../@types/service/apartmentTypes';
 
 export const useOutdoorSpace = (ou_outdoor_space = 0) => {
   const [outdoorSpace, setOutdoorSpace] = useState<OutdoorSpace | null>(null);

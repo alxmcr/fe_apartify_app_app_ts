@@ -1,0 +1,23 @@
+{
+  "model": "app_as_api.apartment",
+  "pk": 3,
+  "fields": {
+    "ap_description": "Es un #DepaApartify que se encuentra ubicado en la Calle Ciprés y Eligio Ancona en el piso #5 además de un elevador. Tiene una cocina, una sala, un comedor y 2 dormitorios en 93 m² además de tener un lugar de estacionamiento. Este depa podrás gozar de una hermosa vista del balcón que tiene acceso por uno de los dormitorios. Es ideal para tí y estamos seguros que te encantará. Con facil acceso a vias de transporte como: calle Eligio Ancona, y Ciprés. A sus alrededores cuenta con: los restaurantes Jametaro Comida Japonesa y la Oveja Negra además del centro comercial Plaza Morisko.",
+    "ap_floor_number": 5,
+    "ap_cost_offer": "$1.826.951",
+    "ap_cost_list": "$3.087.321",
+    "ap_is_remodeling": true,
+    "ap_latitude": 19.454234,
+    "ap_longitude": -99.1539502,
+    "ap_street_name": "Calle Ciprés",
+    "ap_ext_number": "432",
+    "ap_int_number": "321",
+    "ap_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1629407463/Portfolio/appartify-assets/photos/apart-00003/apart-003-photo-001_o2y4qb.jpg",
+    "ap_alt": "Cover: Apartment #3",
+    "ne_neighborhood": 2,
+    "ci_city": 1,
+    "ch_city_hall": 1,
+    "co_country": 1,
+    "st_state": 1
+  }
+}

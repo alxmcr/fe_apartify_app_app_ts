@@ -1,6 +1,6 @@
 import { http, HttpResponse } from 'msw';
-import mockApartments from './data/mock-apartments.json';
-import mockApartment001 from './data/apartments/apartment-001.json';
+import mockApartments from './data/remote/mock-remote-apartments.json';
+import mockApartment001 from './data/remote/apartments/mock-remote-apartment-001.json';
 
 const versionAPI = import.meta.env.VITE_API_VERSION;
 const baseURL = import.meta.env.VITE_API_BASE_URL;

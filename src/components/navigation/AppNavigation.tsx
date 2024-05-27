@@ -1,4 +1,4 @@
-import { NavLinkData } from '../../@types/appTypes';
+import { NavLinkData } from '../../@types/app/appTypes';
 import NavigationList from './lists/NavigationList';
 
 type Props = {

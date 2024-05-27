@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { appHttp } from '../helpers/appHttp';
-import { Feature } from '../@types/apartmentTypes';
+import { Feature } from '../@types/service/apartmentTypes';
 
 export const useFeatures = () => {
   const [features, setFeatures] = useState<Feature[]>([]);

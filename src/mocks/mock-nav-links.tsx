@@ -1,4 +1,4 @@
-import { NavLinkData } from '../@types/appTypes';
+import { NavLinkData } from '../@types/app/appTypes';
 
 export const homeLink: NavLinkData = {
   id: 'nav-link-001',

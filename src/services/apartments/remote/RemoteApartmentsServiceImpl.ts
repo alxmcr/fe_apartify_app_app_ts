@@ -1,7 +1,7 @@
-import { Apartment } from '../../@types/apartmentTypes';
-import { IApartmentsService } from './IApartmentsService';
+import { Apartment } from '../../../@types/service/apartmentTypes';
+import { IRemoteApartmentsService } from './IRemoteApartmentsService';
 
-export class ApartmentsServiceImpl implements IApartmentsService {
+export class RemoteApartmentsServiceImpl implements IRemoteApartmentsService {
   private baseUrl: string;
   private signal: AbortSignal;
 

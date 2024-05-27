@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { appHttp } from '../helpers/appHttp';
-import { Feature } from '../@types/apartmentTypes';
+import { Feature } from '../@types/service/apartmentTypes';
 
 export const useFeature = (fe_feature = 0) => {
   const [feature, setFeature] = useState<Feature | null>(null);

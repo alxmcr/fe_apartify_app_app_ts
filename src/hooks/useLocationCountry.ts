@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { appHttp } from '../helpers/appHttp';
-import { Country } from '../@types/apartmentTypes';
+import { Country } from '../@types/service/apartmentTypes';
 
 export const useLocationCountry = (id = 0) => {
   const [country, setCountry] = useState<Country>();

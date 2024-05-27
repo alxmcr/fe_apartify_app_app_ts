@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { appHttp } from '../helpers/appHttp';
-import { Attract } from '../@types/apartmentTypes';
+import { Attract } from '../@types/service/apartmentTypes';
 
 export const useAttracts = (ap_apartment = 0) => {
   const [attracts, setAttracts] = useState<Attract[]>([]);
