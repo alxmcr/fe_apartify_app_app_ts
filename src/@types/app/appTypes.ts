@@ -9,7 +9,7 @@ import {
   Outdoor,
   Photo,
   State,
-} from './apartmentTypes';
+} from '../service/apartmentTypes';
 
 // -- Common --
 
