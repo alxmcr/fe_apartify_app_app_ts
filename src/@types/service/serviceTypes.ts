@@ -6,7 +6,6 @@ export type LocalApartmentData = {
   model: 'app_as_api.apartment';
   pk: 1;
   fields: {
-    ap_apartment: number;
     ap_description: string;
     ap_floor_number: number;
     ap_cost_offer: string;

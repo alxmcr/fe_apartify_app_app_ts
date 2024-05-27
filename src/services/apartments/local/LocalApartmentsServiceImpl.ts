@@ -1,4 +1,6 @@
 import { Apartment } from '../../../@types/service/apartmentTypes';
+import { LocalApartmentData } from '../../../@types/service/serviceTypes';
+import mockLocalApartments from '../../../mocks/data/local/mock-local-apartments.json';
 import { ILocalApartmentsService } from './ILocalApartmentsService';
 
 export class LocalApartmentsServiceImpl implements ILocalApartmentsService {
@@ -6,6 +8,8 @@ export class LocalApartmentsServiceImpl implements ILocalApartmentsService {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         try {
+          const response = mockLocalApartments as LocalApartmentData[];
+          console.log('🚀 ~ LocalApartmentsServiceImpl ~ setTimeout ~ response:', response);
           resolve([]);
         } catch (error) {
           reject(error);
