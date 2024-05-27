@@ -1,4 +1,4 @@
-import { Apartment } from '../../@types/apartmentTypes';
+import { Apartment } from '../../../@types/apartmentTypes';
 import { IRemoteApartmentsService } from './IRemoteApartmentsService';
 
 export class RemoteApartmentsServiceImpl implements IRemoteApartmentsService {
