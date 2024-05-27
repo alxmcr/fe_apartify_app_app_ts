@@ -15,11 +15,41 @@
       "ap_int_number": "301",
       "ap_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1629406021/Portfolio/appartify-assets/photos/apart-00001/apart-001-photo-001_nbgyns.jpg",
       "ap_alt": "Cover: Apartment #1",
-      "ne_neighborhood": 2,
-      "ci_city": 1,
-      "ch_city_hall": 1,
-      "co_country": 1,
-      "st_state": 1
+      "rel_neighborhood": {
+        "ne_neighborhood": 2,
+        "ne_name": "Hipódromo Condesa",
+        "ne_abbr": "HCON",
+        "ne_url": "",
+        "ne_alt": ""
+      },
+      "rel_city": {
+        "ci_city": 1,
+        "ci_name": "Ciudad de México",
+        "ci_abbr": "CDMX",
+        "ci_url": "",
+        "ci_alt": ""
+      },
+      "rel_city_hall": {
+        "ch_city_hall": 1,
+        "ch_name": "Cuauhtémoc",
+        "ch_abbr": "CUA",
+        "ch_url": "",
+        "ch_alt": ""
+      },
+      "rel_country": {
+        "co_country": 1,
+        "co_name": "Mexico",
+        "co_abbr": "MX",
+        "co_url": "",
+        "co_alt": ""
+      },
+      "rel_state": {
+        "st_state": 1,
+        "st_name": "Estado de México",
+        "st_abbr": "ECDMX",
+        "st_url": "",
+        "st_alt": ""
+      }
     }
   },
   {
@@ -31,18 +61,48 @@
       "ap_cost_offer": "$2.321.233",
       "ap_cost_list": "$4.875.346",
       "ap_is_remodeling": true,
-      "ap_latitude": "19.454234",
-      "ap_longitude": "-99.1539502",
+      "ap_latitude": 19.454234,
+      "ap_longitude": -99.1539502,
       "ap_street_name": "Calle Dr. Enrique Gonzalez Martinez",
       "ap_ext_number": "536",
       "ap_int_number": "321",
       "ap_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1629407431/Portfolio/appartify-assets/photos/apart-00002/apart-002-photo-001_zk4puc.jpg",
       "ap_alt": "Cover: Apartment #2",
-      "ne_neighborhood": 2,
-      "ci_city": 1,
-      "ch_city_hall": 1,
-      "co_country": 1,
-      "st_state": 1
+      "rel_neighborhood": {
+        "ne_neighborhood": 2,
+        "ne_name": "Hipódromo Condesa",
+        "ne_abbr": "HCON",
+        "ne_url": "",
+        "ne_alt": ""
+      },
+      "rel_city": {
+        "ci_city": 1,
+        "ci_name": "Ciudad de México",
+        "ci_abbr": "CDMX",
+        "ci_url": "",
+        "ci_alt": ""
+      },
+      "rel_city_hall": {
+        "ch_city_hall": 1,
+        "ch_name": "Cuauhtémoc",
+        "ch_abbr": "CUA",
+        "ch_url": "",
+        "ch_alt": ""
+      },
+      "rel_country": {
+        "co_country": 1,
+        "co_name": "Mexico",
+        "co_abbr": "MX",
+        "co_url": "",
+        "co_alt": ""
+      },
+      "rel_state": {
+        "st_state": 1,
+        "st_name": "Estado de México",
+        "st_abbr": "ECDMX",
+        "st_url": "",
+        "st_alt": ""
+      }
     }
   },
   {
@@ -54,18 +114,48 @@
       "ap_cost_offer": "$1.826.951",
       "ap_cost_list": "$3.087.321",
       "ap_is_remodeling": true,
-      "ap_latitude": "19.454234",
-      "ap_longitude": "-99.1539502",
+      "ap_latitude": 19.454234,
+      "ap_longitude": -99.1539502,
       "ap_street_name": "Calle Ciprés",
       "ap_ext_number": "432",
       "ap_int_number": "321",
       "ap_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1629407463/Portfolio/appartify-assets/photos/apart-00003/apart-003-photo-001_o2y4qb.jpg",
       "ap_alt": "Cover: Apartment #3",
-      "ne_neighborhood": 2,
-      "ci_city": 1,
-      "ch_city_hall": 1,
-      "co_country": 1,
-      "st_state": 1
+      "rel_neighborhood": {
+        "ne_neighborhood": 2,
+        "ne_name": "Hipódromo Condesa",
+        "ne_abbr": "HCON",
+        "ne_url": "",
+        "ne_alt": ""
+      },
+      "rel_city": {
+        "ci_city": 1,
+        "ci_name": "Ciudad de México",
+        "ci_abbr": "CDMX",
+        "ci_url": "",
+        "ci_alt": ""
+      },
+      "rel_city_hall": {
+        "ch_city_hall": 1,
+        "ch_name": "Cuauhtémoc",
+        "ch_abbr": "CUA",
+        "ch_url": "",
+        "ch_alt": ""
+      },
+      "rel_country": {
+        "co_country": 1,
+        "co_name": "Mexico",
+        "co_abbr": "MX",
+        "co_url": "",
+        "co_alt": ""
+      },
+      "rel_state": {
+        "st_state": 1,
+        "st_name": "Estado de México",
+        "st_abbr": "ECDMX",
+        "st_url": "",
+        "st_alt": ""
+      }
     }
   },
   {
@@ -77,18 +167,48 @@
       "ap_cost_offer": "$4.312.323",
       "ap_cost_list": "$4.565.765",
       "ap_is_remodeling": true,
-      "ap_latitude": "19.451042",
-      "ap_longitude": "-99.159572",
+      "ap_latitude": 19.451042,
+      "ap_longitude": -99.159572,
       "ap_street_name": "Calle Sabino",
       "ap_ext_number": "544",
       "ap_int_number": "867",
       "ap_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1629407500/Portfolio/appartify-assets/photos/apart-00004/apart-004-photo-001_zqybnl.jpg",
       "ap_alt": "Cover: Apartment #4",
-      "ne_neighborhood": 2,
-      "ci_city": 1,
-      "ch_city_hall": 1,
-      "co_country": 1,
-      "st_state": 1
+      "rel_neighborhood": {
+        "ne_neighborhood": 2,
+        "ne_name": "Hipódromo Condesa",
+        "ne_abbr": "HCON",
+        "ne_url": "",
+        "ne_alt": ""
+      },
+      "rel_city": {
+        "ci_city": 1,
+        "ci_name": "Ciudad de México",
+        "ci_abbr": "CDMX",
+        "ci_url": "",
+        "ci_alt": ""
+      },
+      "rel_city_hall": {
+        "ch_city_hall": 1,
+        "ch_name": "Cuauhtémoc",
+        "ch_abbr": "CUA",
+        "ch_url": "",
+        "ch_alt": ""
+      },
+      "rel_country": {
+        "co_country": 1,
+        "co_name": "Mexico",
+        "co_abbr": "MX",
+        "co_url": "",
+        "co_alt": ""
+      },
+      "rel_state": {
+        "st_state": 1,
+        "st_name": "Estado de México",
+        "st_abbr": "ECDMX",
+        "st_url": "",
+        "st_alt": ""
+      }
     }
   },
   {
@@ -100,18 +220,48 @@
       "ap_cost_offer": "$2.543.766",
       "ap_cost_list": "$4.456.123",
       "ap_is_remodeling": true,
-      "ap_latitude": "19.450325",
-      "ap_longitude": "-99.154851",
+      "ap_latitude": 19.450325,
+      "ap_longitude": -99.154851,
       "ap_street_name": "Calle Manuel Carpio",
       "ap_ext_number": "867",
       "ap_int_number": "343",
       "ap_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1629406129/Portfolio/appartify-assets/photos/apart-00005/apart-005-photo-001_cc5quc.jpg",
       "ap_alt": "Cover: Apartment #5",
-      "ne_neighborhood": 2,
-      "ci_city": 1,
-      "ch_city_hall": 1,
-      "co_country": 1,
-      "st_state": 1
+      "rel_neighborhood": {
+        "ne_neighborhood": 2,
+        "ne_name": "Hipódromo Condesa",
+        "ne_abbr": "HCON",
+        "ne_url": "",
+        "ne_alt": ""
+      },
+      "rel_city": {
+        "ci_city": 1,
+        "ci_name": "Ciudad de México",
+        "ci_abbr": "CDMX",
+        "ci_url": "",
+        "ci_alt": ""
+      },
+      "rel_city_hall": {
+        "ch_city_hall": 1,
+        "ch_name": "Cuauhtémoc",
+        "ch_abbr": "CUA",
+        "ch_url": "",
+        "ch_alt": ""
+      },
+      "rel_country": {
+        "co_country": 1,
+        "co_name": "Mexico",
+        "co_abbr": "MX",
+        "co_url": "",
+        "co_alt": ""
+      },
+      "rel_state": {
+        "st_state": 1,
+        "st_name": "Estado de México",
+        "st_abbr": "ECDMX",
+        "st_url": "",
+        "st_alt": ""
+      }
     }
   },
   {
@@ -123,18 +273,48 @@
       "ap_cost_offer": "$4.321.432",
       "ap_cost_list": "$5.543.645",
       "ap_is_remodeling": true,
-      "ap_latitude": "19.455464",
-      "ap_longitude": "-99.16184",
+      "ap_latitude": 19.455464,
+      "ap_longitude": -99.16184,
       "ap_street_name": "Av. Ricardo Flores Magón",
       "ap_ext_number": "231",
       "ap_int_number": "534",
       "ap_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1629406164/Portfolio/appartify-assets/photos/apart-00006/apart-006-photo-001_g5c1jc.jpg",
       "ap_alt": "Cover: Apartment #6",
-      "ne_neighborhood": 2,
-      "ci_city": 1,
-      "ch_city_hall": 1,
-      "co_country": 1,
-      "st_state": 1
+      "rel_neighborhood": {
+        "ne_neighborhood": 2,
+        "ne_name": "Hipódromo Condesa",
+        "ne_abbr": "HCON",
+        "ne_url": "",
+        "ne_alt": ""
+      },
+      "rel_city": {
+        "ci_city": 1,
+        "ci_name": "Ciudad de México",
+        "ci_abbr": "CDMX",
+        "ci_url": "",
+        "ci_alt": ""
+      },
+      "rel_city_hall": {
+        "ch_city_hall": 1,
+        "ch_name": "Cuauhtémoc",
+        "ch_abbr": "CUA",
+        "ch_url": "",
+        "ch_alt": ""
+      },
+      "rel_country": {
+        "co_country": 1,
+        "co_name": "Mexico",
+        "co_abbr": "MX",
+        "co_url": "",
+        "co_alt": ""
+      },
+      "rel_state": {
+        "st_state": 1,
+        "st_name": "Estado de México",
+        "st_abbr": "ECDMX",
+        "st_url": "",
+        "st_alt": ""
+      }
     }
   },
   {
@@ -146,18 +326,48 @@
       "ap_cost_offer": "$2.543.987",
       "ap_cost_list": "$3.896.321",
       "ap_is_remodeling": true,
-      "ap_latitude": "19.455464",
-      "ap_longitude": "-99.16184",
+      "ap_latitude": 19.455464,
+      "ap_longitude": -99.16184,
       "ap_street_name": "Calle Manuel Carpio",
       "ap_ext_number": "655",
       "ap_int_number": "232",
       "ap_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1629406279/Portfolio/appartify-assets/photos/apart-00007/apart-007-photo-001_v3nsjm.jpg",
       "ap_alt": "Cover: Apartment #7",
-      "ne_neighborhood": 2,
-      "ci_city": 1,
-      "ch_city_hall": 1,
-      "co_country": 1,
-      "st_state": 1
+      "rel_neighborhood": {
+        "ne_neighborhood": 2,
+        "ne_name": "Hipódromo Condesa",
+        "ne_abbr": "HCON",
+        "ne_url": "",
+        "ne_alt": ""
+      },
+      "rel_city": {
+        "ci_city": 1,
+        "ci_name": "Ciudad de México",
+        "ci_abbr": "CDMX",
+        "ci_url": "",
+        "ci_alt": ""
+      },
+      "rel_city_hall": {
+        "ch_city_hall": 1,
+        "ch_name": "Cuauhtémoc",
+        "ch_abbr": "CUA",
+        "ch_url": "",
+        "ch_alt": ""
+      },
+      "rel_country": {
+        "co_country": 1,
+        "co_name": "Mexico",
+        "co_abbr": "MX",
+        "co_url": "",
+        "co_alt": ""
+      },
+      "rel_state": {
+        "st_state": 1,
+        "st_name": "Estado de México",
+        "st_abbr": "ECDMX",
+        "st_url": "",
+        "st_alt": ""
+      }
     }
   },
   {
@@ -169,18 +379,48 @@
       "ap_cost_offer": "$3.976.322",
       "ap_cost_list": "$4.323.784",
       "ap_is_remodeling": true,
-      "ap_latitude": "19.453927",
-      "ap_longitude": "-99.160130",
+      "ap_latitude": 19.453927,
+      "ap_longitude": -99.160130,
       "ap_street_name": "Calle del Fresno",
       "ap_ext_number": "231",
       "ap_int_number": "876",
       "ap_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1629406302/Portfolio/appartify-assets/photos/apart-00008/apart-008-photo-001_ny4ewz.jpg",
       "ap_alt": "Cover: Apartment #8",
-      "ne_neighborhood": 2,
-      "ci_city": 1,
-      "ch_city_hall": 1,
-      "co_country": 1,
-      "st_state": 1
+      "rel_neighborhood": {
+        "ne_neighborhood": 2,
+        "ne_name": "Hipódromo Condesa",
+        "ne_abbr": "HCON",
+        "ne_url": "",
+        "ne_alt": ""
+      },
+      "rel_city": {
+        "ci_city": 1,
+        "ci_name": "Ciudad de México",
+        "ci_abbr": "CDMX",
+        "ci_url": "",
+        "ci_alt": ""
+      },
+      "rel_city_hall": {
+        "ch_city_hall": 1,
+        "ch_name": "Cuauhtémoc",
+        "ch_abbr": "CUA",
+        "ch_url": "",
+        "ch_alt": ""
+      },
+      "rel_country": {
+        "co_country": 1,
+        "co_name": "Mexico",
+        "co_abbr": "MX",
+        "co_url": "",
+        "co_alt": ""
+      },
+      "rel_state": {
+        "st_state": 1,
+        "st_name": "Estado de México",
+        "st_abbr": "ECDMX",
+        "st_url": "",
+        "st_alt": ""
+      }
     }
   },
   {
@@ -192,18 +432,48 @@
       "ap_cost_offer": "$2.765.654",
       "ap_cost_list": "$5.432.676",
       "ap_is_remodeling": true,
-      "ap_latitude": "20.676515",
-      "ap_longitude": "-103.351135",
+      "ap_latitude": 20.676515,
+      "ap_longitude": -103.351135,
       "ap_street_name": "Calle Morelos",
       "ap_ext_number": "654",
       "ap_int_number": "231",
       "ap_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1629406334/Portfolio/appartify-assets/photos/apart-00009/apart-009-photo-001_bflpcg.jpg",
       "ap_alt": "Cover: Apartment #9",
-      "ne_neighborhood": 2,
-      "ci_city": 1,
-      "ch_city_hall": 1,
-      "co_country": 1,
-      "st_state": 2
+      "rel_neighborhood": {
+        "ne_neighborhood": 2,
+        "ne_name": "Hipódromo Condesa",
+        "ne_abbr": "HCON",
+        "ne_url": "",
+        "ne_alt": ""
+      },
+      "rel_city": {
+        "ci_city": 1,
+        "ci_name": "Ciudad de México",
+        "ci_abbr": "CDMX",
+        "ci_url": "",
+        "ci_alt": ""
+      },
+      "rel_city_hall": {
+        "ch_city_hall": 1,
+        "ch_name": "Cuauhtémoc",
+        "ch_abbr": "CUA",
+        "ch_url": "",
+        "ch_alt": ""
+      },
+      "rel_country": {
+        "co_country": 1,
+        "co_name": "Mexico",
+        "co_abbr": "MX",
+        "co_url": "",
+        "co_alt": ""
+      },
+      "rel_state": {
+        "st_state": 2,
+        "st_name": "Jalisco",
+        "st_abbr": "JAL",
+        "st_url": "",
+        "st_alt": ""
+      }
     }
   },
   {
@@ -215,18 +485,48 @@
       "ap_cost_offer": "$3.543.312",
       "ap_cost_list": "$4.321.234",
       "ap_is_remodeling": true,
-      "ap_latitude": "20.679305",
-      "ap_longitude": "-103.356242",
+      "ap_latitude": 20.679305,
+      "ap_longitude": -103.356242,
       "ap_street_name": "Calle Jesus",
       "ap_ext_number": "654",
       "ap_int_number": "231",
       "ap_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1629406355/Portfolio/appartify-assets/photos/apart-00010/apart-010-photo-001_wqghcw.jpg",
       "ap_alt": "Cover: Apartment #10",
-      "ne_neighborhood": 2,
-      "ci_city": 1,
-      "ch_city_hall": 1,
-      "co_country": 1,
-      "st_state": 2
+      "rel_neighborhood": {
+        "ne_neighborhood": 2,
+        "ne_name": "Hipódromo Condesa",
+        "ne_abbr": "HCON",
+        "ne_url": "",
+        "ne_alt": ""
+      },
+      "rel_city": {
+        "ci_city": 1,
+        "ci_name": "Ciudad de México",
+        "ci_abbr": "CDMX",
+        "ci_url": "",
+        "ci_alt": ""
+      },
+      "rel_city_hall": {
+        "ch_city_hall": 1,
+        "ch_name": "Cuauhtémoc",
+        "ch_abbr": "CUA",
+        "ch_url": "",
+        "ch_alt": ""
+      },
+      "rel_country": {
+        "co_country": 1,
+        "co_name": "Mexico",
+        "co_abbr": "MX",
+        "co_url": "",
+        "co_alt": ""
+      },
+      "rel_state": {
+        "st_state": 2,
+        "st_name": "Jalisco",
+        "st_abbr": "JAL",
+        "st_url": "",
+        "st_alt": ""
+      }
     }
   }
 ]
