@@ -9,7 +9,11 @@ export default function ApartmentsListingsPage() {
     <main>
       <h1>Listings</h1>
       <pre>{JSON.stringify({ apartments, errorApartments, loadingApartments }, null, 2)}</pre>
+      <span>
+        ---------------
+      </span>
       <pre>{JSON.stringify({ apartment, errorApartment, loadingApartment }, null, 2)}</pre>
+      <img src={apartment?.ap_url} alt={""} />
     </main>
   );
 }
