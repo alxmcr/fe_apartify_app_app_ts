@@ -1,5 +1,5 @@
 import { Apartment } from '../../../@types/service/apartmentTypes';
-import { IRemoteApartmentsService } from './IRemoteApartmentsService';
+import { IRemoteApartmentsService } from '../../apartments/remote/IRemoteApartmentsService';
 
 export class RemoteApartmentsServiceImpl implements IRemoteApartmentsService {
   private baseUrl: string;

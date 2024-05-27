@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { appHttp } from '../helpers/appHttp';
-import { Outdoor } from '../@types/apartmentTypes';
+import { Outdoor } from '../@types/service/apartmentTypes';
 
 export const useOutdoors = (ap_apartment = 0) => {
   const [outdoors, setOutdoors] = useState<Outdoor[]>([]);

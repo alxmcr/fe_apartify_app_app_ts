@@ -1,4 +1,4 @@
-import { Apartment } from '../../../@types/apartmentTypes';
+import { Apartment } from '../../../@types/service/apartmentTypes';
 
 export interface ILocalApartmentsService {
   findAll(): Promise<Apartment[]>;

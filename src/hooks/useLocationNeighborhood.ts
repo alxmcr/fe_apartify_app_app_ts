@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { appHttp } from '../helpers/appHttp';
-import { Neighborhood } from '../@types/apartmentTypes';
+import { Neighborhood } from '../@types/service/apartmentTypes';
 
 export const useLocationNeighborhood = (id: number) => {
   const [neighborhood, setNeighborhood] = useState<Neighborhood | null>(null);

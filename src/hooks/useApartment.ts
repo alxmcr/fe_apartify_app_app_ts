@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import { Apartment } from '../@types/apartmentTypes';
-import { LoadingStates } from '../@types/enumsService';
+import { Apartment } from '../@types/service/apartmentTypes';
+import { LoadingStates } from '../@types/service/enumsService';
 import { RemoteApartmentsServiceImpl } from '../services/apartments/remote/RemoteApartmentsServiceImpl';
 
 export const useApartment = (id = '0') => {

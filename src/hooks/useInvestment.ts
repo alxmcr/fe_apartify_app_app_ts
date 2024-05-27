@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { appHttp } from '../helpers/appHttp';
-import { Investment } from '../@types/apartmentTypes';
+import { Investment } from '../@types/service/apartmentTypes';
 
 export const useInvestment = (in_investment = 0) => {
   const [investment, setInvestment] = useState<Investment | null>(null);

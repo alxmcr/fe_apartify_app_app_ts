@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { appHttp } from '../helpers/appHttp';
-import { Photo } from '../@types/apartmentTypes';
+import { Photo } from '../@types/service/apartmentTypes';
 
 export const usePhotos = (ap_apartment = 0) => {
   const [photos, setPhotos] = useState<Photo[]>([]);

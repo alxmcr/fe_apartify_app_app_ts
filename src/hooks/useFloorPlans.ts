@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { appHttp } from '../helpers/appHttp';
-import { FloorPlan } from '../@types/apartmentTypes';
+import { FloorPlan } from '../@types/service/apartmentTypes';
 
 export const useFloorPlans = (ap_apartment = 0) => {
   const [floorPlans, setFloorPlans] = useState<FloorPlan[]>([]);

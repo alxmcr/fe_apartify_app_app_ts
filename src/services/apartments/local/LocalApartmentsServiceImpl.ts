@@ -1,55 +1,25 @@
-import { Apartment } from '../../../@types/apartmentTypes';
+import { Apartment } from '../../../@types/service/apartmentTypes';
 import { ILocalApartmentsService } from './ILocalApartmentsService';
+import mockApartments from '../../../mocks/data/mock-apartments.json';
 
 export class LocalApartmentsServiceImpl implements ILocalApartmentsService {
-  private baseUrl: string;
-  private signal: AbortSignal;
-
-  constructor(signalAS: AbortSignal) {
-    const versionAPI = import.meta.env.VITE_API_VERSION;
-    const baseURL = import.meta.env.VITE_API_BASE_URL;
-
-    this.baseUrl = `${baseURL}/${versionAPI}/apartments` || '';
-    this.signal = signalAS;
-  }
-
   async findAll(): Promise<Apartment[]> {
-    const options: RequestInit = {
-      method: 'GET',
-      headers: {
-        accept: 'application/json',
-      },
-      signal: this.signal,
-    };
-
-    const urlResource = `${this.baseUrl}`;
-    const response: Response = await fetch(urlResource, options);
-    console.log('🚀 ~ ApartmentsServiceImpl ~ findAll ~ urlResource:', urlResource);
-
-    if (response.status === 200) {
-      return response.json();
-    }
-
-    return Promise.reject(response);
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        try {
+          resolve(mockApartments as Apartment[]);
+        } catch (error) {
+          reject(error);
+        }
+      }, 300);
+    });
   }
 
   async findById(id: string): Promise<Apartment | null> {
-    const options: RequestInit = {
-      method: 'GET',
-      headers: {
-        accept: 'application/json',
-      },
-      signal: this.signal,
-    };
-
-    const urlResource = `${this.baseUrl}/${id}`;
-    const response: Response = await fetch(urlResource, options);
-    console.log('🚀 ~ ApartmentsServiceImpl ~ findById ~ urlResource:', urlResource);
-
-    if (response.status === 200) {
-      return response.json();
-    }
-
-    return Promise.reject(response);
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve([...productsDany, ...productsEmily]);
+      }, 300);
+    });
   }
 }
