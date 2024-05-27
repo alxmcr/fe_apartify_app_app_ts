@@ -5,6 +5,7 @@ import {
 import { Apartment } from '../../../@types/service/apartmentTypes';
 import { LocalApartmentData } from '../../../@types/service/serviceTypes';
 import mockLocalApartments from '../../../mocks/data/local/mock-local-apartments.json';
+import mockLocalPopularListings from '../../../mocks/data/local/mock-local-popular-listings.json';
 import mockLocalApartment001 from '../../../mocks/data/local/apartments/mock-local-apart-001.json';
 import mockLocalApartment002 from '../../../mocks/data/local/apartments/mock-local-apart-002.json';
 import mockLocalApartment003 from '../../../mocks/data/local/apartments/mock-local-apart-003.json';
@@ -16,6 +17,18 @@ export class LocalApartmentsServiceImpl implements ILocalApartmentsService {
       setTimeout(() => {
         try {
           resolve(mapperListLocalApartmentsDataToListApt(mockLocalApartments as LocalApartmentData[]));
+        } catch (error) {
+          reject(error);
+        }
+      }, 300);
+    });
+  }
+
+  async findPopularListings(): Promise<Apartment[]> {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        try {
+          resolve(mapperListLocalApartmentsDataToListApt(mockLocalPopularListings as LocalApartmentData[]));
         } catch (error) {
           reject(error);
         }
