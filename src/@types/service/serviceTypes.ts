@@ -1,3 +1,5 @@
+import { City, CityHall, Country, Neighborhood, State } from './apartmentTypes';
+
 export type ResponseLocalApartmentData = {
   apartments: LocalApartmentData[];
 };
@@ -18,11 +20,11 @@ export type LocalApartmentData = {
     ap_street_name: string;
     ap_ext_number: string;
     ap_int_number: string;
-    ne_neighborhood: number;
-    ci_city: number;
-    ch_city_hall: number;
-    co_country: number;
-    st_state: number;
+    rel_neighborhood: Neighborhood;
+    rel_city: City;
+    rel_city_hall: CityHall;
+    rel_country: Country;
+    rel_state: State;
   };
 };
 
