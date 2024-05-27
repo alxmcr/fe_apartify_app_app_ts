@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Apartment } from '../@types/apartmentTypes';
 import { LoadingStates } from '../@types/enumsService';
-import { ApartmentsServiceImpl } from '../services/apartments/ApartmentsServiceImpl';
+import { RemoteApartmentsServiceImpl } from '../services/apartments-remote/RemoteApartmentsServiceImpl';
 
 export const useApartments = () => {
   const abortControllerRef = React.useRef<AbortController | null>(null);
@@ -17,7 +17,7 @@ export const useApartments = () => {
       try {
         setLoadingApartments(LoadingStates.PENDING);
 
-        const service = new ApartmentsServiceImpl(abortController.signal);
+        const service = new RemoteApartmentsServiceImpl(abortController.signal);
         const apiApartments = await service.findAll();
 
         setApartments(apiApartments);
