@@ -5,7 +5,7 @@ export default function CardHeroInfo() {
   return (
     <article className="flex flex-col gap-12 font-groteskspace md:w-[378px] lg:w-full lg:items-center">
       <div className="flex flex-col justify-center gap-7 lg:w-[578px] lg:items-center">
-        <h1 className="font-rowdies text-[32px] font-bold md:text-[44px] lg:text-center lg:text-[64px] lg:leading-tight">
+        <h1 className="font-rowdies text-[32px] font-bold leading-tight md:text-[44px] lg:text-center lg:text-[64px]">
           Find your dream{' '}
           <span className="border border-x-0 border-t-0 border-electric-violet-600 font-bold  text-electric-violet-600">
             apartment
