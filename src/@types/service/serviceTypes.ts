@@ -1,0 +1,49 @@
+export type ResponseLocalApartmentData = {
+  apartments: LocalApartmentData[];
+};
+
+export type LocalApartmentData = {
+  model: 'app_as_api.apartment';
+  pk: 1;
+  fields: {
+    ap_apartment: number;
+    ap_description: string;
+    ap_floor_number: number;
+    ap_cost_offer: string;
+    ap_cost_list: string;
+    ap_is_remodeling: boolean;
+    ap_latitude: number;
+    ap_longitude: number;
+    ap_url: string;
+    ap_alt: string;
+    ap_street_name: string;
+    ap_ext_number: string;
+    ap_int_number: string;
+    ne_neighborhood: number;
+    ci_city: number;
+    ch_city_hall: number;
+    co_country: number;
+    st_state: number;
+  };
+};
+
+export type RemoteApartmentData = {
+  ap_apartment: number;
+  ap_description: string;
+  ap_floor_number: number;
+  ap_cost_offer: string;
+  ap_cost_list: string;
+  ap_is_remodeling: boolean;
+  ap_latitude: number;
+  ap_longitude: number;
+  ap_url: string;
+  ap_alt: string;
+  ap_street_name: string;
+  ap_ext_number: string;
+  ap_int_number: string;
+  ne_neighborhood: number;
+  ci_city: number;
+  ch_city_hall: number;
+  co_country: number;
+  st_state: number;
+};
