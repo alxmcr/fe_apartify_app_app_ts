@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
-import { Apartment } from '../../../@types/service/apartmentTypes';
 import { LoadingStates } from '../../../@types/service/enumsService';
+import { LocalApartmentData } from '../../../@types/service/serviceTypes';
 import { LocalApartmentsServiceImpl } from '../../../services/apartments/local/LocalApartmentsServiceImpl';
 
 export const useLocalApartments = () => {
-  const [apartments, setApartments] = React.useState<Apartment[]>([]);
+  const [apartments, setApartments] = React.useState<LocalApartmentData[]>([]);
   const [errorApartments, setErrorApartments] = React.useState<Error | null>(null);
   const [loadingApartments, setLoadingApartments] = React.useState(LoadingStates.IDLE);
 

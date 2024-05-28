@@ -1,6 +1,7 @@
-import { Apartment } from '../../../@types/service/apartmentTypes';
+import { LocalApartmentData } from '../../../@types/service/serviceTypes';
 
 export interface ILocalApartmentsService {
-  findAll(): Promise<Apartment[]>;
-  findById(id: string): Promise<Apartment | null>;
+  findAll(): Promise<LocalApartmentData[]>;
+  findPopularListings(): Promise<LocalApartmentData[]>;
+  findById(id: string): Promise<LocalApartmentData | null>;
 }

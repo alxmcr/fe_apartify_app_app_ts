@@ -1,8 +1,7 @@
-import { Apartment } from '../@types/service/apartmentTypes';
-import { LocalApartmentData } from '../@types/service/serviceTypes';
+import { LocalApartmentData, MockApartmentData } from '../@types/service/serviceTypes';
 
-export const mapperLocalApartmentDataToApartment = (localApt: LocalApartmentData) => {
-  const apartment: Apartment = {
+export const mapperMockApartmentDataToLocalApartment = (localApt: MockApartmentData) => {
+  const apartment: LocalApartmentData = {
     ap_apartment: localApt.pk,
     ...localApt.fields,
   };
@@ -10,8 +9,8 @@ export const mapperLocalApartmentDataToApartment = (localApt: LocalApartmentData
   return apartment;
 };
 
-export const mapperListLocalApartmentsDataToListApt = (listLocalApt: LocalApartmentData[] = []) => {
+export const mapperMockListLocalApartmentsDataToListApt = (listLocalApt: MockApartmentData[] = []) => {
   return listLocalApt.map((localApt) => {
-    return mapperLocalApartmentDataToApartment(localApt);
+    return mapperMockApartmentDataToLocalApartment(localApt);
   });
 };
