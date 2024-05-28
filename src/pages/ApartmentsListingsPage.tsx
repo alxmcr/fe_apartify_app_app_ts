@@ -19,6 +19,7 @@ export default function ApartmentsListingsPage() {
       <App24x24Icon iconCode="icon-bathroom" />
       <App24x24Icon iconCode="icon-bedroom" />
       <App24x24Icon iconCode="icon-parking" />
+      <App24x24Icon iconCode="icon-key-vertical-rounded" />
       <br />
 
       <pre>{JSON.stringify({ apartments, errorApartments, loadingApartments }, null, 2)}</pre>

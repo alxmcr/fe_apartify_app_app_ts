@@ -1,6 +1,7 @@
 import Icon24x24Bathroom from './Icon24x24Bathroom';
 import Icon24x24Bedroom from './Icon24x24Bedroom';
 import Icon24x24FloorPlan from './Icon24x24FloorPlan';
+import Icon24x24KeyVerticalRounded from './Icon24x24KeyVerticalRounded';
 import Icon24x24Parking from './Icon24x24Parking';
 
 type Props = {
@@ -10,7 +11,8 @@ type Props = {
     | 'icon-parking'
     | 'icon-bathroom'
     | 'icon-property-type'
-    | 'icon-year-built';
+    | 'icon-year-built'
+    | 'icon-key-vertical-rounded';
 };
 
 export default function App24x24Icon({ iconCode = 'icon-floor-plan' }: Props) {
@@ -26,6 +28,9 @@ export default function App24x24Icon({ iconCode = 'icon-floor-plan' }: Props) {
     }
     case 'icon-bathroom': {
       return <Icon24x24Bathroom />;
+    }
+    case 'icon-key-vertical-rounded': {
+      return <Icon24x24KeyVerticalRounded />;
     }
     default:
       return null;
