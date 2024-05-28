@@ -15,11 +15,15 @@ export default function ApartmentsListingsPage() {
       <h1>Listings</h1>
 
       <hr />
-      <App24x24Icon iconCode="icon-floor-plan" />
-      <App24x24Icon iconCode="icon-bathroom" />
-      <App24x24Icon iconCode="icon-bedroom" />
-      <App24x24Icon iconCode="icon-parking" />
-      <App24x24Icon iconCode="icon-key-vertical-rounded" />
+      <div className="text-cerise-400">
+        <App24x24Icon iconCode="icon-floor-plan" />
+        <App24x24Icon iconCode="icon-bathroom" />
+        <App24x24Icon iconCode="icon-bedroom" />
+        <App24x24Icon iconCode="icon-parking" />
+      </div>
+      <div className="text-purple-500">
+        <App24x24Icon iconCode="icon-key-vertical-rounded" />
+      </div>
       <br />
 
       <pre>{JSON.stringify({ apartments, errorApartments, loadingApartments }, null, 2)}</pre>
