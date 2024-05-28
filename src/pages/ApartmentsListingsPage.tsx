@@ -1,3 +1,4 @@
+import App24x24Icon from '../components/@icons/24x24/App24x24Icon';
 import { useLocalApartment } from '../hooks/apartments/local/useLocalApartment';
 import { useLocalApartments } from '../hooks/apartments/local/useLocalApartments';
 import { useLocalLatestListings } from '../hooks/apartments/local/useLocalLatestListing';
@@ -12,6 +13,14 @@ export default function ApartmentsListingsPage() {
   return (
     <main>
       <h1>Listings</h1>
+
+      <hr />
+      <App24x24Icon iconCode="icon-floor-plan" />
+      <App24x24Icon iconCode="icon-bathroom" />
+      <App24x24Icon iconCode="icon-bedroom" />
+      <App24x24Icon iconCode="icon-parking" />
+      <br />
+
       <pre>{JSON.stringify({ apartments, errorApartments, loadingApartments }, null, 2)}</pre>
       <span>----- APARTMENT ------</span>
       <pre>{JSON.stringify({ apartment, errorApartment, loadingApartment }, null, 2)}</pre>
