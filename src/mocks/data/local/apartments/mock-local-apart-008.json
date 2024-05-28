@@ -1,53 +1,53 @@
 {
-    "model": "app_as_api.apartment",
-    "pk": 8,
-    "fields": {
-        "ap_description": "Es un #DepaApartify que se encuentra ubicado en la Calle del Fresno en el piso #5 además de un elevador. Tiene dos dormitorios, una sala, un comedor y una cocina además de tener un lugar de estacionamiento en 95 m². Este depa podrás gozar de una hermosa vista del balcón que tiene acceso por el dormitorio. Es ideal para tí y estamos seguros que te encantará. Con facil acceso a vias de transporte como: Calle del Fresno y Eligio Ancona. A sus alrededores cuenta con: tienda de ropa 'Industrias Corp Sa De Cv',Farmacia Aída y Mariachis en Cuauhtemoc - Alcaldia CDMX.",
-        "ap_floor_number": 5,
-        "ap_cost_offer": "$3.976.322",
-        "ap_cost_list": "$4.323.784",
-        "ap_is_remodeling": true,
-        "ap_latitude": 19.453927,
-        "ap_longitude": -99.160130,
-        "ap_street_name": "Calle del Fresno",
-        "ap_ext_number": "231",
-        "ap_int_number": "876",
-        "ap_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1629406302/Portfolio/appartify-assets/photos/apart-00008/apart-008-photo-001_ny4ewz.jpg",
-        "ap_alt": "Cover: Apartment #8",
-        "rel_neighborhood": {
-            "ne_neighborhood": 2,
-            "ne_name": "Hipódromo Condesa",
-            "ne_abbr": "HCON",
-            "ne_url": "",
-            "ne_alt": ""
-        },
-        "rel_city": {
-            "ci_city": 1,
-            "ci_name": "Ciudad de México",
-            "ci_abbr": "CDMX",
-            "ci_url": "",
-            "ci_alt": ""
-        },
-        "rel_city_hall": {
-            "ch_city_hall": 1,
-            "ch_name": "Cuauhtémoc",
-            "ch_abbr": "CUA",
-            "ch_url": "",
-            "ch_alt": ""
-        },
-        "rel_country": {
-            "co_country": 1,
-            "co_name": "Mexico",
-            "co_abbr": "MX",
-            "co_url": "",
-            "co_alt": ""
-        },
-        "rel_state": {
-            "st_state": 1,
-            "st_name": "Estado de México",
-            "st_abbr": "ECDMX",
-            "st_url": "",
-            "st_alt": ""
-        }
+  "model": "app_as_api.apartment",
+  "pk": 8,
+  "fields": {
+    "ap_description": "Es un #DepaApartify que se encuentra ubicado en la Calle del Fresno en el piso #5 además de un elevador. Tiene dos dormitorios, una sala, un comedor y una cocina además de tener un lugar de estacionamiento en 95 m². Este depa podrás gozar de una hermosa vista del balcón que tiene acceso por el dormitorio. Es ideal para tí y estamos seguros que te encantará. Con facil acceso a vias de transporte como: Calle del Fresno y Eligio Ancona. A sus alrededores cuenta con: tienda de ropa 'Industrias Corp Sa De Cv',Farmacia Aída y Mariachis en Cuauhtemoc - Alcaldia CDMX.",
+    "ap_floor_number": 5,
+    "ap_cost_offer": "$3.976.322",
+    "ap_cost_list": "$4.323.784",
+    "ap_is_remodeling": true,
+    "ap_latitude": 19.453927,
+    "ap_longitude": -99.16013,
+    "ap_street_name": "Calle del Fresno",
+    "ap_ext_number": "231",
+    "ap_int_number": "876",
+    "ap_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1629406302/Portfolio/appartify-assets/photos/apart-00008/apart-008-photo-001_ny4ewz.jpg",
+    "ap_alt": "Cover: Apartment #8",
+    "rel_neighborhood": {
+      "ne_neighborhood": 2,
+      "ne_name": "Hipódromo Condesa",
+      "ne_abbr": "HCON",
+      "ne_url": "",
+      "ne_alt": ""
+    },
+    "rel_city": {
+      "ci_city": 1,
+      "ci_name": "Ciudad de México",
+      "ci_abbr": "CDMX",
+      "ci_url": "",
+      "ci_alt": ""
+    },
+    "rel_city_hall": {
+      "ch_city_hall": 1,
+      "ch_name": "Cuauhtémoc",
+      "ch_abbr": "CUA",
+      "ch_url": "",
+      "ch_alt": ""
+    },
+    "rel_country": {
+      "co_country": 1,
+      "co_name": "Mexico",
+      "co_abbr": "MX",
+      "co_url": "",
+      "co_alt": ""
+    },
+    "rel_state": {
+      "st_state": 1,
+      "st_name": "Estado de México",
+      "st_abbr": "ECDMX",
+      "st_url": "",
+      "st_alt": ""
     }
+  }
 }
