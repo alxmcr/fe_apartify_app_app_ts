@@ -49,7 +49,53 @@
         "st_abbr": "ECDMX",
         "st_url": "",
         "st_alt": ""
-      }
+      },
+      "rel_features": [
+        {
+          "fe_feature": 1,
+          "fe_type": "Number",
+          "fe_name": "Tamaño",
+          "fe_icon_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1627705301/Portfolio/appartify-assets/svg/room-plan_vyen5l.svg",
+          "fe_icon_color": "#FF9671",
+          "fe_is_in_card": true,
+          "att_value": "95 m²",
+          "att_is_visible": true,
+          "att_is_card": true
+        },
+        {
+          "fe_feature": 2,
+          "fe_type": "Number",
+          "fe_name": "Habitaciones",
+          "fe_icon_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1627705301/Portfolio/appartify-assets/svg/room-furniture_zz4hiz.svg",
+          "fe_icon_color": "#D65DB1",
+          "fe_is_in_card": true,
+          "att_value": "3",
+          "att_is_visible": true,
+          "att_is_card": true
+        },
+        {
+          "fe_feature": 3,
+          "fe_type": "Number",
+          "fe_name": "Lugares de estacionamientos",
+          "fe_icon_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1627705301/Portfolio/appartify-assets/svg/car_afbqde.svg",
+          "fe_icon_color": "#0089BA",
+          "fe_is_in_card": true,
+          "att_value": "1",
+          "att_is_visible": true,
+          "att_is_card": true
+        },
+        {
+          "fe_feature": 4,
+          "fe_type": "Number",
+          "fe_name": "Bathrooms",
+          "fe_icon_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1627705301/Portfolio/appartify-assets/svg/bathtub_kmoorx.svg",
+          "fe_icon_color": "#C34A36",
+          "fe_is_in_card": true,
+          "att_value": "2",
+          "att_is_visible": true,
+          "att_is_card": true
+        }
+      ]
     }
   },
   {
@@ -102,7 +148,51 @@
         "st_abbr": "ECDMX",
         "st_url": "",
         "st_alt": ""
-      }
+      },
+      "rel_features": [
+        {
+          "ap_apartment": 2,
+          "fe_feature": 1,
+          "att_value": "85 m²",
+          "att_is_visible": true,
+          "att_is_card": true
+        },
+        {
+          "ap_apartment": 2,
+          "fe_feature": 2,
+          "att_value": "2",
+          "att_is_visible": true,
+          "att_is_card": true
+        },
+        {
+          "ap_apartment": 2,
+          "fe_feature": 3,
+          "att_value": "2",
+          "att_is_visible": true,
+          "att_is_card": true
+        },
+        {
+          "ap_apartment": 2,
+          "fe_feature": 4,
+          "att_value": "1",
+          "att_is_visible": true,
+          "att_is_card": true
+        },
+        {
+          "ap_apartment": 2,
+          "fe_feature": 5,
+          "att_value": "Depart",
+          "att_is_visible": true,
+          "att_is_card": false
+        },
+        {
+          "ap_apartment": 2,
+          "fe_feature": 6,
+          "att_value": "2020",
+          "att_is_visible": true,
+          "att_is_card": false
+        }
+      ]
     }
   },
   {
@@ -155,7 +245,51 @@
         "st_abbr": "ECDMX",
         "st_url": "",
         "st_alt": ""
-      }
+      },
+      "rel_features": [
+        {
+          "ap_apartment": 3,
+          "fe_feature": 1,
+          "att_value": "93 m²",
+          "att_is_visible": true,
+          "att_is_card": true
+        },
+        {
+          "ap_apartment": 3,
+          "fe_feature": 2,
+          "att_value": "2",
+          "att_is_visible": true,
+          "att_is_card": true
+        },
+        {
+          "ap_apartment": 3,
+          "fe_feature": 3,
+          "att_value": "1",
+          "att_is_visible": true,
+          "att_is_card": true
+        },
+        {
+          "ap_apartment": 3,
+          "fe_feature": 4,
+          "att_value": "2",
+          "att_is_visible": true,
+          "att_is_card": true
+        },
+        {
+          "ap_apartment": 3,
+          "fe_feature": 5,
+          "att_value": "Departamento",
+          "att_is_visible": true,
+          "att_is_card": false
+        },
+        {
+          "ap_apartment": 3,
+          "fe_feature": 6,
+          "att_value": "2020",
+          "att_is_visible": true,
+          "att_is_card": false
+        }
+      ]
     }
   },
   {
@@ -208,7 +342,51 @@
         "st_abbr": "ECDMX",
         "st_url": "",
         "st_alt": ""
-      }
+      },
+      "rel_features": [
+        {
+          "ap_apartment": 4,
+          "fe_feature": 1,
+          "att_value": "88 m²",
+          "att_is_visible": true,
+          "att_is_card": true
+        },
+        {
+          "ap_apartment": 4,
+          "fe_feature": 2,
+          "att_value": "1",
+          "att_is_visible": true,
+          "att_is_card": true
+        },
+        {
+          "ap_apartment": 4,
+          "fe_feature": 3,
+          "att_value": "1",
+          "att_is_visible": true,
+          "att_is_card": true
+        },
+        {
+          "ap_apartment": 4,
+          "fe_feature": 4,
+          "att_value": "1",
+          "att_is_visible": true,
+          "att_is_card": true
+        },
+        {
+          "ap_apartment": 4,
+          "fe_feature": 5,
+          "att_value": "Departamento",
+          "att_is_visible": true,
+          "att_is_card": false
+        },
+        {
+          "ap_apartment": 4,
+          "fe_feature": 6,
+          "att_value": "2020",
+          "att_is_visible": true,
+          "att_is_card": false
+        }
+      ]
     }
   },
   {
@@ -261,7 +439,51 @@
         "st_abbr": "ECDMX",
         "st_url": "",
         "st_alt": ""
-      }
+      },
+      "rel_features": [
+        {
+          "ap_apartment": 5,
+          "fe_feature": 1,
+          "att_value": "87 m²",
+          "att_is_visible": true,
+          "att_is_card": true
+        },
+        {
+          "ap_apartment": 5,
+          "fe_feature": 2,
+          "att_value": "1",
+          "att_is_visible": true,
+          "att_is_card": true
+        },
+        {
+          "ap_apartment": 5,
+          "fe_feature": 3,
+          "att_value": "1",
+          "att_is_visible": true,
+          "att_is_card": true
+        },
+        {
+          "ap_apartment": 5,
+          "fe_feature": 4,
+          "att_value": "1",
+          "att_is_visible": true,
+          "att_is_card": true
+        },
+        {
+          "ap_apartment": 5,
+          "fe_feature": 5,
+          "att_value": "Departamento",
+          "att_is_visible": true,
+          "att_is_card": false
+        },
+        {
+          "ap_apartment": 5,
+          "fe_feature": 6,
+          "att_value": "2020",
+          "att_is_visible": true,
+          "att_is_card": false
+        }
+      ]
     }
   },
   {
@@ -314,7 +536,51 @@
         "st_abbr": "ECDMX",
         "st_url": "",
         "st_alt": ""
-      }
+      },
+      "rel_features": [
+        {
+          "ap_apartment": 6,
+          "fe_feature": 1,
+          "att_value": "98 m²",
+          "att_is_visible": true,
+          "att_is_card": true
+        },
+        {
+          "ap_apartment": 6,
+          "fe_feature": 2,
+          "att_value": "2",
+          "att_is_visible": true,
+          "att_is_card": true
+        },
+        {
+          "ap_apartment": 6,
+          "fe_feature": 3,
+          "att_value": "1",
+          "att_is_visible": true,
+          "att_is_card": true
+        },
+        {
+          "ap_apartment": 6,
+          "fe_feature": 4,
+          "att_value": "2",
+          "att_is_visible": true,
+          "att_is_card": true
+        },
+        {
+          "ap_apartment": 6,
+          "fe_feature": 5,
+          "att_value": "Departamento",
+          "att_is_visible": true,
+          "att_is_card": false
+        },
+        {
+          "ap_apartment": 6,
+          "fe_feature": 6,
+          "att_value": "2020",
+          "att_is_visible": true,
+          "att_is_card": false
+        }
+      ]
     }
   },
   {
