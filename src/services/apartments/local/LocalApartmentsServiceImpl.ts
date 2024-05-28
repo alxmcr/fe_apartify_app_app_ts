@@ -1,22 +1,24 @@
 import {
-  mapperMockListLocalApartmentsDataToListApt,
   mapperMockApartmentDataToLocalApartment,
+  mapperMockListLocalApartmentsDataToListApt,
 } from '../../../@mappers/mapperLocalApartments';
-import { Apartment } from '../../../@types/service/apartmentTypes';
-import { MockApartmentData } from '../../../@types/service/serviceTypes';
-import mockLocalApartments from '../../../mocks/data/local/mock-local-apartments.json';
-import mockLocalPopularListings from '../../../mocks/data/local/mock-local-popular-listings.json';
+import { LocalApartmentData, MockApartmentData } from '../../../@types/service/serviceTypes';
 import mockLocalApartment001 from '../../../mocks/data/local/apartments/mock-local-apart-001.json';
 import mockLocalApartment002 from '../../../mocks/data/local/apartments/mock-local-apart-002.json';
 import mockLocalApartment003 from '../../../mocks/data/local/apartments/mock-local-apart-003.json';
+import mockLocalApartments from '../../../mocks/data/local/mock-local-apartments.json';
 import { ILocalApartmentsService } from './ILocalApartmentsService';
 
 export class LocalApartmentsServiceImpl implements ILocalApartmentsService {
-  async findAll(): Promise<Apartment[]> {
+  async findAll(): Promise<LocalApartmentData[]> {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         try {
-          resolve(mapperMockListLocalApartmentsDataToListApt(mockLocalApartments as MockApartmentData[]));
+          const apartments = mapperMockListLocalApartmentsDataToListApt(
+            mockLocalApartments as MockApartmentData[],
+          );
+
+          resolve(apartments);
         } catch (error) {
           reject(error);
         }
@@ -24,11 +26,14 @@ export class LocalApartmentsServiceImpl implements ILocalApartmentsService {
     });
   }
 
-  async findPopularListings(): Promise<Apartment[]> {
+  async findPopularListings(): Promise<LocalApartmentData[]> {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         try {
-          resolve(mapperMockListLocalApartmentsDataToListApt(mockLocalPopularListings as MockApartmentData[]));
+          const mockDataTransformed = mapperMockListLocalApartmentsDataToListApt(
+            mockLocalApartments as MockApartmentData[],
+          );
+          resolve(mockDataTransformed);
         } catch (error) {
           reject(error);
         }
@@ -36,7 +41,7 @@ export class LocalApartmentsServiceImpl implements ILocalApartmentsService {
     });
   }
 
-  async findById(id = '0'): Promise<Apartment | null> {
+  async findById(id = '0'): Promise<LocalApartmentData | null> {
     console.log('🚀 ~ LocalApartmentsServiceImpl ~ findById ~ id:', id);
     return new Promise((resolve, reject) => {
       setTimeout(() => {
