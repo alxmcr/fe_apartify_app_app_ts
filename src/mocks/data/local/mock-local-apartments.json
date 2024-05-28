@@ -633,7 +633,51 @@
         "st_abbr": "ECDMX",
         "st_url": "",
         "st_alt": ""
-      }
+      },
+      "rel_features": [
+        {
+          "ap_apartment": 7,
+          "fe_feature": 1,
+          "att_value": "87 m²",
+          "att_is_visible": true,
+          "att_is_card": true
+        },
+        {
+          "ap_apartment": 7,
+          "fe_feature": 2,
+          "att_value": "2",
+          "att_is_visible": true,
+          "att_is_card": true
+        },
+        {
+          "ap_apartment": 7,
+          "fe_feature": 3,
+          "att_value": "1",
+          "att_is_visible": true,
+          "att_is_card": true
+        },
+        {
+          "ap_apartment": 7,
+          "fe_feature": 4,
+          "att_value": "2",
+          "att_is_visible": true,
+          "att_is_card": true
+        },
+        {
+          "ap_apartment": 7,
+          "fe_feature": 5,
+          "att_value": "Departamento",
+          "att_is_visible": true,
+          "att_is_card": false
+        },
+        {
+          "ap_apartment": 7,
+          "fe_feature": 6,
+          "att_value": "2019",
+          "att_is_visible": true,
+          "att_is_card": false
+        }
+      ]
     }
   },
   {
@@ -686,7 +730,51 @@
         "st_abbr": "ECDMX",
         "st_url": "",
         "st_alt": ""
-      }
+      },
+      "rel_features": [
+        {
+          "ap_apartment": 8,
+          "fe_feature": 1,
+          "att_value": "95 m²",
+          "att_is_visible": true,
+          "att_is_card": true
+        },
+        {
+          "ap_apartment": 8,
+          "fe_feature": 2,
+          "att_value": "2",
+          "att_is_visible": true,
+          "att_is_card": true
+        },
+        {
+          "ap_apartment": 8,
+          "fe_feature": 3,
+          "att_value": "1",
+          "att_is_visible": true,
+          "att_is_card": true
+        },
+        {
+          "ap_apartment": 8,
+          "fe_feature": 4,
+          "att_value": "2",
+          "att_is_visible": true,
+          "att_is_card": true
+        },
+        {
+          "ap_apartment": 8,
+          "fe_feature": 5,
+          "att_value": "Departamento",
+          "att_is_visible": true,
+          "att_is_card": false
+        },
+        {
+          "ap_apartment": 8,
+          "fe_feature": 6,
+          "att_value": "2019",
+          "att_is_visible": true,
+          "att_is_card": false
+        }
+      ]
     }
   },
   {
@@ -739,7 +827,51 @@
         "st_abbr": "JAL",
         "st_url": "",
         "st_alt": ""
-      }
+      },
+      "rel_features": [
+        {
+          "ap_apartment": 9,
+          "fe_feature": 1,
+          "att_value": "92 m²",
+          "att_is_visible": true,
+          "att_is_card": true
+        },
+        {
+          "ap_apartment": 9,
+          "fe_feature": 2,
+          "att_value": "3",
+          "att_is_visible": true,
+          "att_is_card": true
+        },
+        {
+          "ap_apartment": 9,
+          "fe_feature": 3,
+          "att_value": "1",
+          "att_is_visible": true,
+          "att_is_card": true
+        },
+        {
+          "ap_apartment": 9,
+          "fe_feature": 4,
+          "att_value": "2",
+          "att_is_visible": true,
+          "att_is_card": true
+        },
+        {
+          "ap_apartment": 9,
+          "fe_feature": 5,
+          "att_value": "Departamento",
+          "att_is_visible": true,
+          "att_is_card": false
+        },
+        {
+          "ap_apartment": 9,
+          "fe_feature": 6,
+          "att_value": "2018",
+          "att_is_visible": true,
+          "att_is_card": false
+        }
+      ]
     }
   },
   {
@@ -792,7 +924,51 @@
         "st_abbr": "JAL",
         "st_url": "",
         "st_alt": ""
-      }
+      },
+      "rel_features": [
+        {
+          "ap_apartment": 10,
+          "fe_feature": 1,
+          "att_value": "87 m²",
+          "att_is_visible": true,
+          "att_is_card": true
+        },
+        {
+          "ap_apartment": 10,
+          "fe_feature": 2,
+          "att_value": "2",
+          "att_is_visible": true,
+          "att_is_card": true
+        },
+        {
+          "ap_apartment": 10,
+          "fe_feature": 3,
+          "att_value": "1",
+          "att_is_visible": true,
+          "att_is_card": true
+        },
+        {
+          "ap_apartment": 10,
+          "fe_feature": 4,
+          "att_value": "2",
+          "att_is_visible": true,
+          "att_is_card": true
+        },
+        {
+          "ap_apartment": 10,
+          "fe_feature": 5,
+          "att_value": "Departamento",
+          "att_is_visible": true,
+          "att_is_card": false
+        },
+        {
+          "ap_apartment": 10,
+          "fe_feature": 6,
+          "att_value": "2018",
+          "att_is_visible": true,
+          "att_is_card": false
+        }
+      ]
     }
   }
 ]
