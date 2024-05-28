@@ -1,11 +1,13 @@
 import { useLocalApartment } from '../hooks/apartments/local/useLocalApartment';
 import { useLocalApartments } from '../hooks/apartments/local/useLocalApartments';
+import { useLocalLatestListings } from '../hooks/apartments/local/useLocalLatestListing';
 import { useLocalPopularListings } from '../hooks/apartments/local/useLocalPopularListings';
 
 export default function ApartmentsListingsPage() {
   const { apartments, errorApartments, loadingApartments } = useLocalApartments();
-  const { popularApartments, loadingPopularApartments, errorPopularApartments } = useLocalPopularListings();
   const { apartment, errorApartment, loadingApartment } = useLocalApartment('1');
+  const { popularApartments, loadingPopularApartments, errorPopularApartments } = useLocalPopularListings();
+  const { latestApartments, loadingLatestApartments, errorLatestApartments } = useLocalLatestListings();
 
   return (
     <main>
@@ -17,6 +19,10 @@ export default function ApartmentsListingsPage() {
       <span>----- POPULAR -----</span>
       <pre>
         {JSON.stringify({ popularApartments, loadingPopularApartments, errorPopularApartments }, null, 2)}
+      </pre>
+      <span>----- LATEST -----</span>
+      <pre>
+        {JSON.stringify({ latestApartments, loadingLatestApartments, errorLatestApartments }, null, 2)}
       </pre>
     </main>
   );
