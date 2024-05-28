@@ -53,7 +53,7 @@
     "fields": {
       "fe_type": "String",
       "fe_name": "Tipo de Propiedad",
-      "fe_icon_code": "icon-xyz",
+      "fe_icon_code": "icon-property-type",
       "fe_icon_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1627705301/Portfolio/appartify-assets/svg/bathtub_kmoorx.svg",
       "fe_icon_color": "#00C9A7",
       "fe_is_in_card": false
@@ -65,7 +65,7 @@
     "fields": {
       "fe_type": "Number",
       "fe_name": "Año de construcción",
-      "fe_icon_code": "icon-xyz",
+      "fe_icon_code": "icon-year-built",
       "fe_icon_url": "",
       "fe_icon_color": "#257A3E",
       "fe_is_in_card": false
