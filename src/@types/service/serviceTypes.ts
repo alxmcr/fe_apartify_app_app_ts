@@ -8,6 +8,7 @@ export type LocalAttributeData = {
   fe_feature: number;
   fe_type: string;
   fe_name: string;
+  fe_icon_code: string;
   fe_icon_url: string;
   fe_icon_color: string;
   fe_is_in_card: boolean;
