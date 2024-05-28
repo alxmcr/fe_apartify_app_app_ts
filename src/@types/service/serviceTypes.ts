@@ -4,6 +4,19 @@ export type ResponseLocalApartmentData = {
   apartments: LocalApartmentData[];
 };
 
+export type LocalAttributeData = {
+  fe_feature: number;
+  fe_type: string;
+  fe_name: string;
+  fe_icon_code: string;
+  fe_icon_url: string;
+  fe_icon_color: string;
+  fe_is_in_card: boolean;
+  att_value: string;
+  att_is_visible: boolean;
+  att_is_card: boolean;
+};
+
 export type LocalApartmentData = {
   ap_apartment: number;
   ap_description: string;
@@ -43,6 +56,7 @@ export type LocalApartmentFields = {
   rel_city_hall: CityHall;
   rel_country: Country;
   rel_state: State;
+  rel_features: LocalAttributeData[];
 };
 
 export type MockApartmentData = {
