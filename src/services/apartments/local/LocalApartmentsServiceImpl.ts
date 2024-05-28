@@ -7,6 +7,8 @@ import mockLocalApartment001 from '../../../mocks/data/local/apartments/mock-loc
 import mockLocalApartment002 from '../../../mocks/data/local/apartments/mock-local-apart-002.json';
 import mockLocalApartment003 from '../../../mocks/data/local/apartments/mock-local-apart-003.json';
 import mockLocalApartments from '../../../mocks/data/local/mock-local-apartments.json';
+import mockLocalLatestListings from '../../../mocks/data/local/mock-local-latest-listings.json';
+import mockLocalPopularListings from '../../../mocks/data/local/mock-local-popular-listings.json';
 import { ILocalApartmentsService } from './ILocalApartmentsService';
 
 export class LocalApartmentsServiceImpl implements ILocalApartmentsService {
@@ -31,7 +33,22 @@ export class LocalApartmentsServiceImpl implements ILocalApartmentsService {
       setTimeout(() => {
         try {
           const mockDataTransformed = mapperMockListLocalApartmentsDataToListApt(
-            mockLocalApartments as MockApartmentData[],
+            mockLocalPopularListings as MockApartmentData[],
+          );
+          resolve(mockDataTransformed);
+        } catch (error) {
+          reject(error);
+        }
+      }, 300);
+    });
+  }
+
+  async findLatestListings(): Promise<LocalApartmentData[]> {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        try {
+          const mockDataTransformed = mapperMockListLocalApartmentsDataToListApt(
+            mockLocalLatestListings as MockApartmentData[],
           );
           resolve(mockDataTransformed);
         } catch (error) {
