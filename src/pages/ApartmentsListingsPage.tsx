@@ -2,8 +2,8 @@ import MainContentListings from '../components/listings-apartments-page/MainCont
 
 export default function ApartmentsListingsPage() {
   return (
-    <main>
+    <div>
       <MainContentListings />
-    </main>
+    </div>
   );
 }
