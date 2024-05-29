@@ -14,7 +14,13 @@ export default function BoxListingApartments() {
   }
 
   return (
-    <div>
+    <div className="flex flex-col gap-7">
+      <h2 className="text-[26px] font-bold md:text-[28px] lg:text-[36px]">
+        {'Apartments '}
+        <span className="border border-x-0 border-t-0 border-electric-violet-600 font-bold  text-electric-violet-600">
+          ({apartments.length})
+        </span>
+      </h2>
       <BoxGroupApartments apartments={apartments} />
     </div>
   );
