@@ -7,7 +7,7 @@ type Props = {
 
 export default function CardApartment({ apartment }: Props) {
   return (
-    <article className="flex h-[350px] w-[288px] flex-col gap-[11px] rounded-2xl border md:h-[370px] md:w-[310px] lg:h-[396px] lg:w-[348px]">
+    <article className="flex h-[350px] w-[288px] flex-col gap-[11px] rounded-2xl border md:h-[370px] md:w-[310px] lg:h-[396px] lg:w-[326px]">
       <img
         src={apartment?.ap_url}
         alt={`Photo by ${apartment.ap_description}`}
