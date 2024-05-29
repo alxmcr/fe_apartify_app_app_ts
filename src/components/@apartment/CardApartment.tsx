@@ -1,5 +1,5 @@
 import { LocalApartmentData } from '../../@types/service/serviceTypes';
-import App32x32Icon from '../@icons/32x32/App32x32Icon';
+import GroupFeaturesApartment from './GroupFeaturesApartment';
 
 type Props = {
   apartment: LocalApartmentData;
@@ -19,7 +19,7 @@ export default function CardApartment({ apartment }: Props) {
             <h3 className="font-groteskspace text-[18px] font-bold text-electric-violet-600 md:text-[20px]">
               {apartment?.ap_cost_offer}
             </h3>
-            <span className="font-groteskspace text-[18px] font-bold text-electric-violet-200 line-through md:text-[20px]">
+            <span className="font-groteskspace text-[18px] font-bold text-electric-violet-300 line-through md:text-[20px]">
               {apartment?.ap_cost_list}
             </span>
           </div>
@@ -27,16 +27,7 @@ export default function CardApartment({ apartment }: Props) {
             {apartment?.ap_street_name} {apartment?.ap_ext_number}
           </p>
         </div>
-        <div className="flex items-center justify-between gap-[4px]">
-          {apartment.rel_features.map((feature) => (
-            <div key={feature.fe_feature} className="flex items-center gap-[4px]">
-              <span className="text-electric-violet-600">
-                <App32x32Icon iconCode={feature.fe_icon_code} />
-              </span>
-              <span>{feature.att_value}</span>
-            </div>
-          ))}
-        </div>
+        <GroupFeaturesApartment features={apartment.rel_features} />
       </div>
     </article>
   );
