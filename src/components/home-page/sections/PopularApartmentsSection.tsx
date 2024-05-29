@@ -1,9 +1,10 @@
 import BoxPopularApartments from '../../@apartments/BoxPopularApartments';
+import BaseSection from '../../BaseSection';
 
 export default function PopularApartmentsSection() {
-   return (
-    <section>
+  return (
+    <BaseSection>
       <BoxPopularApartments />
-    </section>
+    </BaseSection>
   );
 }
