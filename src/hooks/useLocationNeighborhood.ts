@@ -5,7 +5,7 @@ import { Neighborhood } from '../@types/service/apartmentTypes';
 export const useLocationNeighborhood = (id: number) => {
   const [neighborhood, setNeighborhood] = useState<Neighborhood | null>(null);
   const [errorNeighborhood, setErrorNeighborhood] = useState(null);
-  const [loadingNeighborhood, setLoadingNeighborhood] = useState(false);
+  const [statusNeighborhood, setStatusNeighborhood] = useState(false);
   const versionAPI = import.meta.env.VITE_API_VERSION;
   const baseURL = import.meta.env.VITE_API_BASE_URL;
   const url = `${baseURL}/${versionAPI}/neighborhoods/${id}` || '';
@@ -15,7 +15,7 @@ export const useLocationNeighborhood = (id: number) => {
     const abortController = new AbortController();
     const { signal } = abortController;
 
-    setLoadingNeighborhood(true);
+    setStatusNeighborhood(true);
     appHttp<Neighborhood>(url, signal)
       .then((data) => {
         setNeighborhood(data);
@@ -25,7 +25,7 @@ export const useLocationNeighborhood = (id: number) => {
           setErrorNeighborhood(error);
         }
       })
-      .finally(() => setLoadingNeighborhood(false));
+      .finally(() => setStatusNeighborhood(false));
 
     // Clean up
     return function cancel() {
@@ -33,5 +33,5 @@ export const useLocationNeighborhood = (id: number) => {
     };
   }, [url]);
 
-  return { neighborhood, loadingNeighborhood, errorNeighborhood };
+  return { neighborhood, statusNeighborhood, errorNeighborhood };
 };

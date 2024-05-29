@@ -42,6 +42,7 @@ export type LocalApartmentData = {
   rel_city_hall: CityHall;
   rel_country: Country;
   rel_state: State;
+  rel_features: LocalAttributeData[];
 };
 
 export type LocalApartmentFields = {

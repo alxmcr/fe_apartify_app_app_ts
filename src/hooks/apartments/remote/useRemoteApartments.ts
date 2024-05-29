@@ -7,7 +7,7 @@ export const useRemoteApartments = () => {
   const abortControllerRef = React.useRef<AbortController | null>(null);
   const [apartments, setApartments] = React.useState<Apartment[]>([]);
   const [errorApartments, setErrorApartments] = React.useState<Error | null>(null);
-  const [loadingApartments, setLoadingApartments] = React.useState(LoadingStates.IDLE);
+  const [loadingApartments, setStatusApartments] = React.useState(LoadingStates.IDLE);
 
   useEffect(() => {
     const abortController = new AbortController();
@@ -15,15 +15,15 @@ export const useRemoteApartments = () => {
 
     const fetchApartments = async () => {
       try {
-        setLoadingApartments(LoadingStates.PENDING);
+        setStatusApartments(LoadingStates.PENDING);
 
         const service = new RemoteApartmentsServiceImpl(abortController.signal);
         const apiApartments = await service.findAll();
 
         setApartments(apiApartments);
-        setLoadingApartments(LoadingStates.SUCCESS);
+        setStatusApartments(LoadingStates.SUCCESS);
       } catch (error) {
-        setLoadingApartments(LoadingStates.ERROR);
+        setStatusApartments(LoadingStates.ERROR);
         if (error instanceof Error && error.name === 'AbortError') {
           setErrorApartments(null);
         } else if (error instanceof Error) {

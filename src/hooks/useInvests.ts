@@ -5,7 +5,7 @@ import { Invest } from '../@types/service/apartmentTypes';
 export const useInvests = (ap_apartment = 0) => {
   const [invests, setInvests] = useState<Invest[]>([]);
   const [errorInvests, setErrorInvests] = useState(null);
-  const [loadingInvests, setLoadingInvests] = useState(false);
+  const [statusInvests, setStatusInvests] = useState(false);
   const versionAPI = import.meta.env.VITE_API_VERSION;
   const baseURL = import.meta.env.VITE_API_BASE_URL;
   const url = `${baseURL}/${versionAPI}/invests` || '';
@@ -15,7 +15,7 @@ export const useInvests = (ap_apartment = 0) => {
     const abortController = new AbortController();
     const { signal } = abortController;
 
-    setLoadingInvests(true);
+    setStatusInvests(true);
 
     appHttp<Invest[]>(url, signal)
       .then((data) => {
@@ -29,7 +29,7 @@ export const useInvests = (ap_apartment = 0) => {
           setErrorInvests(error);
         }
       })
-      .finally(() => setLoadingInvests(false));
+      .finally(() => setStatusInvests(false));
 
     // Clean up
     return function cancel() {
@@ -37,5 +37,5 @@ export const useInvests = (ap_apartment = 0) => {
     };
   }, [url, ap_apartment]);
 
-  return { invests, loadingInvests, errorInvests };
+  return { invests, statusInvests, errorInvests };
 };

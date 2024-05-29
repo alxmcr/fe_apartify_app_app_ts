@@ -5,7 +5,7 @@ import { Country } from '../@types/service/apartmentTypes';
 export const useLocationCountry = (id = 0) => {
   const [country, setCountry] = useState<Country>();
   const [error, setError] = useState(null);
-  const [loading, setLoading] = useState(false);
+  const [statusLocationCountry, setStatusLocationCountry] = useState(false);
   const versionAPI = import.meta.env.VITE_API_VERSION;
   const baseURL = import.meta.env.VITE_API_BASE_URL;
   const url = `${baseURL}/${versionAPI}/countries/${id}` || '';
@@ -15,7 +15,7 @@ export const useLocationCountry = (id = 0) => {
     const abortController = new AbortController();
     const { signal } = abortController;
 
-    setLoading(true);
+    setStatusLocationCountry(true);
     appHttp<Country>(url, signal)
       .then((data) => {
         setCountry(data);
@@ -25,7 +25,7 @@ export const useLocationCountry = (id = 0) => {
           setError(error);
         }
       })
-      .finally(() => setLoading(false));
+      .finally(() => setStatusLocationCountry(false));
 
     // Clean up
     return function cancel() {
@@ -33,5 +33,5 @@ export const useLocationCountry = (id = 0) => {
     };
   }, [url]);
 
-  return { country, loading, error };
+  return { country, statusLocationCountry, error };
 };

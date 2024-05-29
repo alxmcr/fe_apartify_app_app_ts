@@ -5,7 +5,7 @@ import { Photo } from '../@types/service/apartmentTypes';
 export const usePhotos = (ap_apartment = 0) => {
   const [photos, setPhotos] = useState<Photo[]>([]);
   const [errorPhotos, setErrorPhotos] = useState(null);
-  const [loadingPhotos, setLoadingPhotos] = useState(false);
+  const [statusPhotos, setStatusPhotos] = useState(false);
   const versionAPI = import.meta.env.VITE_API_VERSION;
   const baseURL = import.meta.env.VITE_API_BASE_URL;
   const url = `${baseURL}/${versionAPI}/photos` || '';
@@ -15,7 +15,7 @@ export const usePhotos = (ap_apartment = 0) => {
     const abortController = new AbortController();
     const { signal } = abortController;
 
-    setLoadingPhotos(true);
+    setStatusPhotos(true);
 
     appHttp<Photo[]>(url, signal)
       .then((data) => {
@@ -29,7 +29,7 @@ export const usePhotos = (ap_apartment = 0) => {
           setErrorPhotos(error);
         }
       })
-      .finally(() => setLoadingPhotos(false));
+      .finally(() => setStatusPhotos(false));
 
     // Clean up
     return function cancel() {
@@ -37,5 +37,5 @@ export const usePhotos = (ap_apartment = 0) => {
     };
   }, [url, ap_apartment]);
 
-  return { photos, loadingPhotos, errorPhotos };
+  return { photos, statusPhotos, errorPhotos };
 };

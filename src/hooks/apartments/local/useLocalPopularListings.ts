@@ -6,20 +6,20 @@ import { LocalApartmentsServiceImpl } from '../../../services/apartments/local/L
 export const useLocalPopularListings = () => {
   const [popularApartments, setPopularApartments] = React.useState<LocalApartmentData[]>([]);
   const [errorPopularApartments, setErrorPopularApartments] = React.useState<Error | null>(null);
-  const [loadingPopularApartments, setLoadingPopularApartments] = React.useState(LoadingStates.IDLE);
+  const [statusPopularApartments, setStatusPopularApartments] = React.useState(LoadingStates.IDLE);
 
   useEffect(() => {
     const fetchApartments = async () => {
       try {
-        setLoadingPopularApartments(LoadingStates.PENDING);
+        setStatusPopularApartments(LoadingStates.PENDING);
 
         const service = new LocalApartmentsServiceImpl();
         const apiApartments = await service.findPopularListings();
 
         setPopularApartments(apiApartments);
-        setLoadingPopularApartments(LoadingStates.SUCCESS);
+        setStatusPopularApartments(LoadingStates.SUCCESS);
       } catch (error) {
-        setLoadingPopularApartments(LoadingStates.ERROR);
+        setStatusPopularApartments(LoadingStates.ERROR);
         if (error instanceof Error && error.name === 'AbortError') {
           setErrorPopularApartments(null);
         } else if (error instanceof Error) {
@@ -32,5 +32,5 @@ export const useLocalPopularListings = () => {
     fetchApartments();
   }, []);
 
-  return { popularApartments, loadingPopularApartments, errorPopularApartments };
+  return { popularApartments, statusPopularApartments, errorPopularApartments };
 };

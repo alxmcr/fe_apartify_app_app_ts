@@ -4,8 +4,8 @@
     "fields": {
         "ap_description": "Es un #DepaApartify que se encuentra ubicado en la Calle Morelos en el piso #4 además de un elevador. Tiene tres dormitorios, un comedor, una sala y una cocina en 92 m² además de tener un lugar de estacionamiento. Este depa podrás gozar de una hermosa vista del balcón que tiene acceso por el dormitorio. Es ideal para tí y estamos seguros que te encantará. Con facil acceso a vias de transporte como: Calle Donato Guerra y Enrique González Martínez. A sus alrededores cuenta con: Escuela de Enfermeria y Nutricion Jalisco, Imprenta Americana y Papelerias Azpeitia",
         "ap_floor_number": 4,
-        "ap_cost_offer": "$2.765.654",
-        "ap_cost_list": "$5.432.676",
+        "ap_cost_offer": "$2,765.654",
+        "ap_cost_list": "$5,432.676",
         "ap_is_remodeling": true,
         "ap_latitude": 20.676515,
         "ap_longitude": -103.351135,

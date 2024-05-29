@@ -6,20 +6,20 @@ import { LocalApartmentsServiceImpl } from '../../../services/apartments/local/L
 export const useLocalApartments = () => {
   const [apartments, setApartments] = React.useState<LocalApartmentData[]>([]);
   const [errorApartments, setErrorApartments] = React.useState<Error | null>(null);
-  const [loadingApartments, setLoadingApartments] = React.useState(LoadingStates.IDLE);
+  const [loadingApartments, setStatusApartments] = React.useState(LoadingStates.IDLE);
 
   useEffect(() => {
     const fetchApartments = async () => {
       try {
-        setLoadingApartments(LoadingStates.PENDING);
+        setStatusApartments(LoadingStates.PENDING);
 
         const service = new LocalApartmentsServiceImpl();
         const apiApartments = await service.findAll();
 
         setApartments(apiApartments);
-        setLoadingApartments(LoadingStates.SUCCESS);
+        setStatusApartments(LoadingStates.SUCCESS);
       } catch (error) {
-        setLoadingApartments(LoadingStates.ERROR);
+        setStatusApartments(LoadingStates.ERROR);
         if (error instanceof Error && error.name === 'AbortError') {
           setErrorApartments(null);
         } else if (error instanceof Error) {

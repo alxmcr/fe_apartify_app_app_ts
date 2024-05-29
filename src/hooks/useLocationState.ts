@@ -5,7 +5,7 @@ import { State } from '../@types/service/apartmentTypes';
 export const useLocationState = (id = 0) => {
   const [locationState, setLocationState] = useState<State | null>(null);
   const [errorLocationState, setErrorLocationState] = useState(null);
-  const [loadingLocationState, setLoadingLocationState] = useState(false);
+  const [statusLocationState, setStatusLocationState] = useState(false);
   const versionAPI = import.meta.env.VITE_API_VERSION;
   const baseURL = import.meta.env.VITE_API_BASE_URL;
   const url = `${baseURL}/${versionAPI}/states/${id}` || '';
@@ -15,7 +15,7 @@ export const useLocationState = (id = 0) => {
     const abortController = new AbortController();
     const { signal } = abortController;
 
-    setLoadingLocationState(true);
+    setStatusLocationState(true);
     appHttp<State>(url, signal)
       .then((data) => {
         setLocationState(data);
@@ -25,7 +25,7 @@ export const useLocationState = (id = 0) => {
           setErrorLocationState(error);
         }
       })
-      .finally(() => setLoadingLocationState(false));
+      .finally(() => setStatusLocationState(false));
 
     // Clean up
     return function cancel() {
@@ -33,5 +33,5 @@ export const useLocationState = (id = 0) => {
     };
   }, [url]);
 
-  return { locationState, loadingLocationState, errorLocationState };
+  return { locationState, statusLocationState, errorLocationState };
 };
