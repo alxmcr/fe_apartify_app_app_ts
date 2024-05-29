@@ -1,4 +1,4 @@
-import CardApartment from '../components/@apartments/CardApartment';
+import CardApartment from '../components/@apartment/CardApartment';
 import { useLocalApartment } from '../hooks/apartments/local/useLocalApartment';
 
 export default function ApartmentsListingsPage() {
