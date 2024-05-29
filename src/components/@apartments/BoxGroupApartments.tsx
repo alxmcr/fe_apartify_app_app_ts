@@ -11,7 +11,7 @@ export default function BoxGroupApartments({ apartments = [] }: Props) {
   }
 
   return (
-    <div>
+    <div className="py-4">
       <GroupApartments apartments={apartments} />
     </div>
   );
