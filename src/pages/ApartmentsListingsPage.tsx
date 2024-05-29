@@ -1,8 +1,9 @@
-import CardApartment from '../components/@apartment/CardApartment';
-import { useLocalApartment } from '../hooks/apartments/local/useLocalApartment';
+import MainContentListings from '../components/listings-apartments-page/MainContentListings';
 
 export default function ApartmentsListingsPage() {
-  const { apartment } = useLocalApartment('1');
-
-  return <main>{apartment !== null ? <CardApartment apartment={apartment} /> : null}</main>;
+  return (
+    <main>
+      <MainContentListings />
+    </main>
+  );
 }
