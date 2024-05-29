@@ -5,7 +5,7 @@ import { FloorPlan } from '../@types/service/apartmentTypes';
 export const useFloorPlans = (ap_apartment = 0) => {
   const [floorPlans, setFloorPlans] = useState<FloorPlan[]>([]);
   const [errorFloorPlans, setErrorFloorPlans] = useState(null);
-  const [loadingFloorPlans, setLoadingFloorPlans] = useState(false);
+  const [statusFloorPlans, setStatusFloorPlans] = useState(false);
   const versionAPI = import.meta.env.VITE_API_VERSION;
   const baseURL = import.meta.env.VITE_API_BASE_URL;
   const url = `${baseURL}/${versionAPI}/floor_plans` || '';
@@ -15,7 +15,7 @@ export const useFloorPlans = (ap_apartment = 0) => {
     const abortController = new AbortController();
     const { signal } = abortController;
 
-    setLoadingFloorPlans(true);
+    setStatusFloorPlans(true);
 
     appHttp<FloorPlan[]>(url, signal)
       .then((data) => {
@@ -29,7 +29,7 @@ export const useFloorPlans = (ap_apartment = 0) => {
           setErrorFloorPlans(error);
         }
       })
-      .finally(() => setLoadingFloorPlans(false));
+      .finally(() => setStatusFloorPlans(false));
 
     // Clean up
     return function cancel() {
@@ -37,5 +37,5 @@ export const useFloorPlans = (ap_apartment = 0) => {
     };
   }, [url, ap_apartment]);
 
-  return { floorPlans, loadingFloorPlans, errorFloorPlans };
+  return { floorPlans, statusFloorPlans, errorFloorPlans };
 };

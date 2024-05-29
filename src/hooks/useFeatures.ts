@@ -5,7 +5,7 @@ import { Feature } from '../@types/service/apartmentTypes';
 export const useFeatures = () => {
   const [features, setFeatures] = useState<Feature[]>([]);
   const [errorFeatures, setErrorFeatures] = useState(null);
-  const [loadingFeatures, setLoadingFeatures] = useState(false);
+  const [statusFeatures, setStatusFeatures] = useState(false);
   const versionAPI = import.meta.env.VITE_API_VERSION;
   const baseURL = import.meta.env.VITE_API_BASE_URL;
   const url = `${baseURL}/${versionAPI}/features` || '';
@@ -15,7 +15,7 @@ export const useFeatures = () => {
     const abortController = new AbortController();
     const { signal } = abortController;
 
-    setLoadingFeatures(true);
+    setStatusFeatures(true);
     appHttp<Feature[]>(url, signal)
       .then((data) => {
         setFeatures(data);
@@ -25,7 +25,7 @@ export const useFeatures = () => {
           setErrorFeatures(error);
         }
       })
-      .finally(() => setLoadingFeatures(false));
+      .finally(() => setStatusFeatures(false));
 
     // Clean up
     return function cancel() {
@@ -33,5 +33,5 @@ export const useFeatures = () => {
     };
   }, [url]);
 
-  return { features, loadingFeatures, errorFeatures };
+  return { features, statusFeatures, errorFeatures };
 };

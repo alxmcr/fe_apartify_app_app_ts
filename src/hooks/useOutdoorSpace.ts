@@ -5,7 +5,7 @@ import { OutdoorSpace } from '../@types/service/apartmentTypes';
 export const useOutdoorSpace = (ou_outdoor_space = 0) => {
   const [outdoorSpace, setOutdoorSpace] = useState<OutdoorSpace | null>(null);
   const [errorOutdoorSpace, setErrorOutdoorSpace] = useState(null);
-  const [loadingOutdoorSpace, setLoadingOutdoorSpace] = useState(false);
+  const [statusOutdoorSpace, setStatusOutdoorSpace] = useState(false);
   const versionAPI = import.meta.env.VITE_API_VERSION;
   const baseURL = import.meta.env.VITE_API_BASE_URL;
   const url = `${baseURL}/${versionAPI}/outdoor_spaces/${ou_outdoor_space}` || '';
@@ -15,7 +15,7 @@ export const useOutdoorSpace = (ou_outdoor_space = 0) => {
     const abortController = new AbortController();
     const { signal } = abortController;
 
-    setLoadingOutdoorSpace(true);
+    setStatusOutdoorSpace(true);
 
     appHttp<OutdoorSpace>(url, signal)
       .then((data) => {
@@ -26,7 +26,7 @@ export const useOutdoorSpace = (ou_outdoor_space = 0) => {
           setErrorOutdoorSpace(error);
         }
       })
-      .finally(() => setLoadingOutdoorSpace(false));
+      .finally(() => setStatusOutdoorSpace(false));
 
     // Clean up
     return function cancel() {
@@ -34,5 +34,5 @@ export const useOutdoorSpace = (ou_outdoor_space = 0) => {
     };
   }, [url]);
 
-  return { outdoorSpace, loadingOutdoorSpace, errorOutdoorSpace };
+  return { outdoorSpace, statusOutdoorSpace, errorOutdoorSpace };
 };

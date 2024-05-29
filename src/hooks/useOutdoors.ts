@@ -5,7 +5,7 @@ import { Outdoor } from '../@types/service/apartmentTypes';
 export const useOutdoors = (ap_apartment = 0) => {
   const [outdoors, setOutdoors] = useState<Outdoor[]>([]);
   const [errorOutdoors, setErrorOutdoors] = useState(null);
-  const [loadingOutdoors, setLoadingOutdoors] = useState(false);
+  const [statusOutdoors, setStatusOutdoors] = useState(false);
   const versionAPI = import.meta.env.VITE_API_VERSION;
   const baseURL = import.meta.env.VITE_API_BASE_URL;
   const url = `${baseURL}/${versionAPI}/outdoors` || '';
@@ -15,7 +15,7 @@ export const useOutdoors = (ap_apartment = 0) => {
     const abortController = new AbortController();
     const { signal } = abortController;
 
-    setLoadingOutdoors(true);
+    setStatusOutdoors(true);
 
     appHttp<Outdoor[]>(url, signal)
       .then((data) => {
@@ -29,7 +29,7 @@ export const useOutdoors = (ap_apartment = 0) => {
           setErrorOutdoors(error);
         }
       })
-      .finally(() => setLoadingOutdoors(false));
+      .finally(() => setStatusOutdoors(false));
 
     // Clean up
     return function cancel() {
@@ -37,5 +37,5 @@ export const useOutdoors = (ap_apartment = 0) => {
     };
   }, [url, ap_apartment]);
 
-  return { outdoors, loadingOutdoors, errorOutdoors };
+  return { outdoors, statusOutdoors, errorOutdoors };
 };
