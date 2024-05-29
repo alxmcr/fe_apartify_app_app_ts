@@ -6,7 +6,7 @@ import { LocalApartmentsServiceImpl } from '../../../services/apartments/local/L
 export const useLocalApartments = () => {
   const [apartments, setApartments] = React.useState<LocalApartmentData[]>([]);
   const [errorApartments, setErrorApartments] = React.useState<Error | null>(null);
-  const [loadingApartments, setStatusApartments] = React.useState(LoadingStates.IDLE);
+  const [statusApartments, setStatusApartments] = React.useState(LoadingStates.IDLE);
 
   useEffect(() => {
     const fetchApartments = async () => {
@@ -32,5 +32,5 @@ export const useLocalApartments = () => {
     fetchApartments();
   }, []);
 
-  return { apartments, loadingApartments, errorApartments };
+  return { apartments, statusApartments, errorApartments };
 };
