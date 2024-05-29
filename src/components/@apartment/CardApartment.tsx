@@ -7,13 +7,13 @@ type Props = {
 
 export default function CardApartment({ apartment }: Props) {
   return (
-    <article className="flex h-[350px] w-[288px] flex-col gap-[11px] rounded-2xl border md:h-[370px] md:w-[310px] lg:h-[396px] lg:w-[326px]">
+    <article className="flex w-full flex-col gap-[11px] rounded-2xl border md:h-[390px] md:w-[310px] lg:h-[410px] lg:w-[326px]">
       <img
         src={apartment?.ap_url}
         alt={`Photo by ${apartment.ap_description}`}
-        className="h-[182px] w-full rounded-2xl bg-cover md:h-[204px] lg:h-[222px]"
+        className="h-[242px] w-full rounded-2xl bg-cover md:h-[204px] lg:h-[222px]"
       />
-      <div className="flex flex-col gap-[28px] px-4">
+      <div className="flex flex-col gap-[28px] px-4 py-6">
         <div className="flex flex-col gap-[16px]">
           <div className="flex items-center justify-between">
             <h3 className="font-groteskspace text-[18px] font-bold text-electric-violet-600 md:text-[20px]">
