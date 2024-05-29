@@ -14,7 +14,7 @@ export default function ApartmentHeroSection({ apartment }: Props) {
       <div className="flex h-screen flex-col gap-[26px] py-24 md:gap-[46px]">
         <img
           src={apartment?.ap_url}
-          alt={`Photo by ${apartment.ap_description}`}
+          alt={`Photo by ${apartment.ap_alt}`}
           className="h-[242px] w-full rounded-2xl bg-cover md:h-[204px] lg:h-[222px]"
         />
         <h1 className="text-[32px] font-bold text-electric-violet-600">

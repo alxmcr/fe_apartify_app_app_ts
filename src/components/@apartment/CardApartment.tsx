@@ -10,7 +10,7 @@ export default function CardApartment({ apartment }: Props) {
     <article className="flex w-full flex-col gap-[11px] rounded-2xl border md:h-[420px] md:w-[330px] lg:h-[440px] lg:w-[326px]">
       <img
         src={apartment?.ap_url}
-        alt={`Photo by ${apartment.ap_description}`}
+        alt={`Photo by ${apartment.ap_alt}`}
         className="h-[242px] w-full rounded-2xl bg-cover md:h-[204px] lg:h-[222px]"
       />
       <div className="flex flex-col gap-[28px] px-4 py-6">
