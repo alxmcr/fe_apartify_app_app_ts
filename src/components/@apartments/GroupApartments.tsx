@@ -7,7 +7,7 @@ type Props = {
 
 export default function GroupApartments({ apartments = [] }: Props) {
   return (
-    <div className="flex flex-col gap-[44px] md:grid md:grid-cols-2">
+    <div className="flex flex-col flex-wrap gap-[44px] md:grid md:grid-cols-2">
       {apartments.map((apartment) => (
         <CardApartment key={apartment.ap_apartment} apartment={apartment} />
       ))}
