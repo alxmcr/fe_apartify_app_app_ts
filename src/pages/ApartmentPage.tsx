@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom';
 import MainContentApartment from '../components/apartment-page/MainContentApartment';
 import { useLocalApartment } from '../hooks/apartments/local/useLocalApartment';
 import { LoadingStates } from '../@types/service/enumsService';
+import ApartmentDescriptionSection from '../components/apartment-page/sections/ApartmentDescriptionSection';
 
 export default function ApartmentPage() {
   const { id } = useParams();
@@ -17,8 +18,9 @@ export default function ApartmentPage() {
 
   if (LoadingStates.SUCCESS === statusApartment && apartment !== null) {
     return (
-      <main>
+      <main className="flex flex-col gap-8">
         <MainContentApartment apartment={apartment} />
+        <ApartmentDescriptionSection apartment={apartment} />
       </main>
     );
   }
