@@ -143,6 +143,68 @@
                 "ph_is_cover": true,
                 "ap_apartment": 3
             }
+        ],
+        "rel_outdoor_spaces": [
+            {
+                "os_outdoor_space": 13,
+                "ou_type": "Number",
+                "ou_name": "Nivel",
+                "ou_icon_url": "",
+                "ou_icon_color": "",
+                "out_value": "5",
+                "out_is_visible": true,
+                "out_is_card": true
+            },
+            {
+                "os_outdoor_space": 14,
+                "ou_type": "string",
+                "ou_name": "Balcón",
+                "ou_icon_url": "",
+                "ou_icon_color": "",
+                "out_value": "Sí",
+                "out_is_visible": true,
+                "out_is_card": true
+            },
+            {
+                "os_outdoor_space": 15,
+                "ou_type": "string",
+                "ou_name": "Elevador",
+                "ou_icon_url": "",
+                "ou_icon_color": "",
+                "out_value": "Sí",
+                "out_is_visible": true,
+                "out_is_card": true
+            },
+            {
+                "os_outdoor_space": 16,
+                "ou_type": "string",
+                "ou_name": "Seguridad",
+                "ou_icon_url": "",
+                "ou_icon_color": "",
+                "out_value": "Sí",
+                "out_is_visible": true,
+                "out_is_card": true
+            },
+            {
+                "os_outdoor_space": 17,
+                "ou_type": "string",
+                "ou_name": "Rooftop",
+                "ou_icon_url": "",
+                "ou_icon_color": "",
+                "out_value": "Sí",
+                "out_is_visible": true,
+                "out_is_card": true
+            },
+            {
+                "os_outdoor_space": 18,
+                "ou_type": "string",
+                "ou_name": "Terraza privada",
+                "ou_icon_url": "",
+                "ou_icon_color": "",
+                "out_value": "No",
+                "out_is_visible": true,
+                "out_is_card": true
+            }
         ]
     }
 }
