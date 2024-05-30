@@ -6,9 +6,14 @@ type Props = {
 
 export default function PhotoGalleryApartment({ photos = [] }: Props) {
   return (
-    <div className="lg:grid lg:grid-cols-3 lg:gap-2">
+    <div className="flex flex-wrap justify-center">
       {photos.map((photo) => (
-        <img key={photo.ph_photo} src={photo.ph_url} alt={photo.ph_alt} />
+        <img
+          key={photo.ph_photo}
+          src={photo.ph_url}
+          alt={photo.ph_alt}
+          className="w-full p-2 sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3"
+        />
       ))}
     </div>
   );
