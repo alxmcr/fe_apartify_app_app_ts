@@ -11,7 +11,7 @@ export default function BoxFeatureApartment({ feature }: Props) {
       <span className="text-electric-violet-600">
         <App32x32Icon iconCode={feature.fe_icon_code} />
       </span>
-      <span>{feature.att_value}</span>
+      <span className="font-groteskspace text-[14px] font-bold md:text-[16px]">{feature.att_value}</span>
     </div>
   );
 }

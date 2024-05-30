@@ -12,7 +12,7 @@ export default function PhotoGalleryApartment({ photos = [] }: Props) {
           key={photo.ph_photo}
           src={photo.ph_url}
           alt={photo.ph_alt}
-          className="w-full p-2 sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3"
+          className="w-full rounded-2xl p-2 sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3"
         />
       ))}
     </div>
