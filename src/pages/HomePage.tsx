@@ -4,10 +4,10 @@ import PopularApartmentsSection from '../components/home-page/sections/PopularAp
 
 export default function HomePage() {
   return (
-    <main>
+    <div>
       <MainContentHomePage />
       <PopularApartmentsSection />
       <LatestApartmentsSection />
-    </main>
+    </div>
   );
 }
