@@ -1,4 +1,5 @@
 import { LocalApartmentData } from '../../../@types/service/serviceTypes';
+import ListFeaturesApartment from '../../@apartment/ListFeaturesApartment';
 import BaseSection from '../../BaseSection';
 
 type Props = {
@@ -12,9 +13,9 @@ export default function ApartmentFeaturesDetailsSection({ apartment }: Props) {
 
   return (
     <BaseSection>
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col gap-3 py-4">
         <h2 className="text-[32px] font-bold text-electric-violet-600">Features</h2>
-        <p className="font-groteskspace text-[18px] leading-8">{apartment.ap_description}</p>
+        <ListFeaturesApartment features={apartment.rel_features} />
       </div>
     </BaseSection>
   );
