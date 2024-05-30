@@ -23,6 +23,14 @@ export type LocalAttributeData = {
   att_is_card: boolean;
 };
 
+export type LocalPhotoData = {
+  ph_photo: number;
+  ph_url: string;
+  ph_alt: string;
+  ph_is_cover: boolean;
+  ap_apartment: number;
+};
+
 export type LocalApartmentData = {
   ap_apartment: number;
   ap_description: string;
@@ -43,6 +51,7 @@ export type LocalApartmentData = {
   rel_country: Country;
   rel_state: State;
   rel_features: LocalAttributeData[];
+  rel_photos: LocalPhotoData[];
 };
 
 export type LocalApartmentFields = {
@@ -64,6 +73,7 @@ export type LocalApartmentFields = {
   rel_country: Country;
   rel_state: State;
   rel_features: LocalAttributeData[];
+  rel_photos: LocalPhotoData[];
 };
 
 export type MockApartmentData = {

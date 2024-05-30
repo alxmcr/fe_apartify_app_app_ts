@@ -122,6 +122,26 @@
                 "att_is_visible": true,
                 "att_is_card": false
             }
+        ],
+        "rel_photos": [
+            {
+                "ph_photo": 4,
+                "ph_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1629406049/Portfolio/appartify-assets/photos/apart-00002/apart-002-photo-002_ik9yrx.jpg",
+                "ph_alt": "Room-002",
+                "ph_is_cover": false
+            },
+            {
+                "ph_photo": 5,
+                "ph_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1629406049/Portfolio/appartify-assets/photos/apart-00002/apart-002-photo-003_vxrp5a.jpg",
+                "ph_alt": "Room-003",
+                "ph_is_cover": false
+            },
+            {
+                "ph_photo": 6,
+                "ph_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1629407431/Portfolio/appartify-assets/photos/apart-00002/apart-002-photo-001_zk4puc.jpg",
+                "ph_alt": "Room-001",
+                "ph_is_cover": true
+            }
         ]
     }
 }
