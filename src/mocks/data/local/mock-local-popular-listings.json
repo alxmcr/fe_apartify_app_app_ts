@@ -99,6 +99,26 @@
           "att_is_visible": true,
           "att_is_card": true
         }
+      ],
+      "rel_photos": [
+        {
+          "ph_photo": 1,
+          "ph_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1629406022/Portfolio/appartify-assets/photos/apart-00001/apart-001-photo-_002_kptqvb.jpg",
+          "ph_alt": "Room-002",
+          "ph_is_cover": false
+        },
+        {
+          "ph_photo": 2,
+          "ph_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1629406021/Portfolio/appartify-assets/photos/apart-00001/apart-001-photo-_003_scxhms.jpg",
+          "ph_alt": "Room-003",
+          "ph_is_cover": false
+        },
+        {
+          "ph_photo": 3,
+          "ph_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1629406021/Portfolio/appartify-assets/photos/apart-00001/apart-001-photo-001_nbgyns.jpg",
+          "ph_alt": "Room-001",
+          "ph_is_cover": true
+        }
       ]
     }
   },
@@ -226,6 +246,26 @@
           "att_is_visible": true,
           "att_is_card": false
         }
+      ],
+      "rel_photos": [
+        {
+          "ph_photo": 19,
+          "ph_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1629406279/Portfolio/appartify-assets/photos/apart-00007/apart-007-photo-002_fvrco2.jpg",
+          "ph_alt": "Room-002",
+          "ph_is_cover": false
+        },
+        {
+          "ph_photo": 20,
+          "ph_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1629406280/Portfolio/appartify-assets/photos/apart-00007/apart-007-photo-003_x7glls.jpg",
+          "ph_alt": "Room-003",
+          "ph_is_cover": false
+        },
+        {
+          "ph_photo": 21,
+          "ph_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1629406279/Portfolio/appartify-assets/photos/apart-00007/apart-007-photo-001_v3nsjm.jpg",
+          "ph_alt": "Room-001",
+          "ph_is_cover": true
+        }
       ]
     }
   },
@@ -352,6 +392,26 @@
           "att_value": "2018",
           "att_is_visible": true,
           "att_is_card": false
+        }
+      ],
+      "rel_photos": [
+        {
+          "ph_photo": 28,
+          "ph_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1629406357/Portfolio/appartify-assets/photos/apart-00010/apart-010-photo-002_iqrj1z.jpg",
+          "ph_alt": "Room-002",
+          "ph_is_cover": false
+        },
+        {
+          "ph_photo": 29,
+          "ph_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1629406357/Portfolio/appartify-assets/photos/apart-00010/apart-010-photo-003_kgqmsk.jpg",
+          "ph_alt": "Room-003",
+          "ph_is_cover": false
+        },
+        {
+          "ph_photo": 30,
+          "ph_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1629406355/Portfolio/appartify-assets/photos/apart-00010/apart-010-photo-001_wqghcw.jpg",
+          "ph_alt": "Room-001",
+          "ph_is_cover": true
         }
       ]
     }
