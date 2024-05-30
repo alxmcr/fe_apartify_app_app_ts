@@ -10,7 +10,7 @@ export default function ListItemFeatureApartment({ feature }: Props) {
   }
 
   return (
-    <li className="flex items-center gap-4">
+    <li className="flex items-center gap-4 text-[16px] md:text-[20px]">
       <span className="font-bold">{feature.fe_name}:</span>
       <span>{feature.att_value}</span>
     </li>
