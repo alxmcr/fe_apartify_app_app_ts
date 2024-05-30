@@ -119,6 +119,68 @@
           "ph_alt": "Room-001",
           "ph_is_cover": true
         }
+      ],
+      "rel_outdoor_spaces": [
+        {
+          "os_outdoor_space": 1,
+          "ou_type": "Number",
+          "ou_name": "Nivel",
+          "ou_icon_url": "",
+          "ou_icon_color": "",
+          "out_value": "8",
+          "out_is_visible": true,
+          "out_is_card": true
+        },
+        {
+          "os_outdoor_space": 2,
+          "ou_type": "string",
+          "ou_name": "Balcón",
+          "ou_icon_url": "",
+          "ou_icon_color": "",
+          "out_value": "Sí",
+          "out_is_visible": true,
+          "out_is_card": true
+        },
+        {
+          "os_outdoor_space": 3,
+          "ou_type": "string",
+          "ou_name": "Elevador",
+          "ou_icon_url": "",
+          "ou_icon_color": "",
+          "out_value": "Sí",
+          "out_is_visible": true,
+          "out_is_card": true
+        },
+        {
+          "os_outdoor_space": 4,
+          "ou_type": "string",
+          "ou_name": "Seguridad",
+          "ou_icon_url": "",
+          "ou_icon_color": "",
+          "out_value": "Sí",
+          "out_is_visible": true,
+          "out_is_card": true
+        },
+        {
+          "os_outdoor_space": 5,
+          "ou_type": "string",
+          "ou_name": "Rooftop",
+          "ou_icon_url": "",
+          "ou_icon_color": "",
+          "out_value": "Sí",
+          "out_is_visible": true,
+          "out_is_card": true
+        },
+        {
+          "os_outdoor_space": 6,
+          "ou_type": "string",
+          "ou_name": "Terraza privada",
+          "ou_icon_url": "",
+          "ou_icon_color": "",
+          "out_value": "No",
+          "out_is_visible": true,
+          "out_is_card": true
+        }
       ]
     }
   },
@@ -265,6 +327,44 @@
           "ph_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1629407431/Portfolio/appartify-assets/photos/apart-00002/apart-002-photo-001_zk4puc.jpg",
           "ph_alt": "Room-001",
           "ph_is_cover": true
+        }
+      ],
+      "rel_outdoor_spaces": [
+        {
+          "ou_outdoor_space": 1,
+          "out_value": "3",
+          "out_is_visible": true,
+          "out_is_card": true
+        },
+        {
+          "ou_outdoor_space": 2,
+          "out_value": "Sí",
+          "out_is_visible": true,
+          "out_is_card": true
+        },
+        {
+          "ou_outdoor_space": 3,
+          "out_value": "Sí",
+          "out_is_visible": true,
+          "out_is_card": true
+        },
+        {
+          "ou_outdoor_space": 4,
+          "out_value": "Sí",
+          "out_is_visible": true,
+          "out_is_card": true
+        },
+        {
+          "ou_outdoor_space": 5,
+          "out_value": "Sí",
+          "out_is_visible": true,
+          "out_is_card": true
+        },
+        {
+          "ou_outdoor_space": 6,
+          "out_value": "No",
+          "out_is_visible": true,
+          "out_is_card": true
         }
       ]
     }
