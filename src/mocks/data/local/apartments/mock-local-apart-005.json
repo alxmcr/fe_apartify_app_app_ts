@@ -204,6 +204,48 @@
         "out_is_visible": true,
         "out_is_card": true
       }
+    ],
+    "rel_invests": [
+      {
+        "inve_invest": 17,
+        "in_type": "Currency",
+        "in_name": "Renta diaria corta estancia",
+        "in_icon_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1627708184/Portfolio/appartify-assets/svg/key_vtnoyk.svg",
+        "in_icon_color": "#0075f2",
+        "inv_value": "$1,178",
+        "inv_is_visible": true,
+        "inv_is_card": true
+      },
+      {
+        "inve_invest": 18,
+        "in_type": "Number",
+        "in_name": "Tasa de ocupación",
+        "in_icon_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1627708184/Portfolio/appartify-assets/svg/key_vtnoyk.svg",
+        "in_icon_color": "#ef8354",
+        "inv_value": "52%",
+        "inv_is_visible": true,
+        "inv_is_card": true
+      },
+      {
+        "inve_invest": 19,
+        "in_type": "Currency",
+        "in_name": "Renta mensual larga estancia",
+        "in_icon_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1627708184/Portfolio/appartify-assets/svg/key_vtnoyk.svg",
+        "in_icon_color": "#f32321",
+        "inv_value": "$26,515",
+        "inv_is_visible": true,
+        "inv_is_card": true
+      },
+      {
+        "inve_invest": 20,
+        "in_type": "Currency",
+        "in_name": "Mantenimiento mensual",
+        "in_icon_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1627708184/Portfolio/appartify-assets/svg/key_vtnoyk.svg",
+        "in_icon_color": "#3ea923",
+        "inv_value": "$2,100.00",
+        "inv_is_visible": true,
+        "inv_is_card": true
+      }
     ]
   }
 }
