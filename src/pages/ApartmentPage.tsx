@@ -23,6 +23,7 @@ export default function ApartmentPage() {
         <MainContentApartment apartment={apartment} />
         <ApartmentDescriptionSection apartment={apartment} />
         <ApartmentFeaturesDetailsSection apartment={apartment} />
+        <pre>{JSON.stringify(apartment.rel_outdoor_spaces, null, 2)}</pre>
       </main>
     );
   }

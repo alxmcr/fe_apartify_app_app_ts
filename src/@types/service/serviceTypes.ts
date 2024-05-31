@@ -31,6 +31,17 @@ export type LocalPhotoData = {
   ap_apartment: number;
 };
 
+export type LocalOutdoorSpaceData = {
+  os_outdoor_space: number;
+  ou_type: string;
+  ou_name: string;
+  ou_icon_url: string;
+  ou_icon_color: string;
+  out_value: string;
+  out_is_visible: boolean;
+  out_is_card: boolean;
+};
+
 export type LocalApartmentData = {
   ap_apartment: number;
   ap_description: string;
@@ -52,6 +63,7 @@ export type LocalApartmentData = {
   rel_state: State;
   rel_features: LocalAttributeData[];
   rel_photos: LocalPhotoData[];
+  rel_outdoor_spaces: LocalOutdoorSpaceData[];
 };
 
 export type LocalApartmentFields = {
@@ -74,6 +86,7 @@ export type LocalApartmentFields = {
   rel_state: State;
   rel_features: LocalAttributeData[];
   rel_photos: LocalPhotoData[];
+  rel_outdoor_spaces: LocalOutdoorSpaceData[];
 };
 
 export type MockApartmentData = {
