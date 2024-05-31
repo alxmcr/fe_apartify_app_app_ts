@@ -27,6 +27,7 @@ export default function ApartmentPage() {
         <ApartmentFeaturesDetailsSection apartment={apartment} />
         <ApartmentOutdoorsDetailsSection apartment={apartment} />
         <ApartmentInvestmentsSection apartment={apartment} />
+        <pre>{JSON.stringify({ x: apartment.fp_url, y: apartment.fp_alt }, null, 2)}</pre>
       </main>
     );
   }
