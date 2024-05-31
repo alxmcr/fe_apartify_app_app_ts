@@ -1,209 +1,209 @@
 {
-    "model": "app_as_api.apartment",
-    "pk": 6,
-    "fields": {
-        "ap_description": "Es un #DepaApartify que se encuentra ubicado en la Av. Ricardo Flores Magón en el piso #4 además de un elevador. Tiene una sala, dos dormitorios, una cocina y un comedor en 98 m² además de tener un lugar de estacionamiento. Este depa podrás gozar de una hermosa vista del balcón que tiene acceso por el dormitorio. Es ideal para tí y estamos seguros que te encantará. Con facil acceso a vias de transporte como: Calle Pedral y Nogal. A sus alrededores cuenta con: la Bodega Aurrera Express Los Gallos, tienda de alimentacion 'Yadis' y gasolinera PEMEX.",
-        "ap_floor_number": 4,
-        "ap_cost_offer": "$4,321.432",
-        "ap_cost_list": "$5,543.645",
-        "ap_is_remodeling": true,
-        "ap_latitude": 19.455464,
-        "ap_longitude": -99.16184,
-        "ap_street_name": "Av. Ricardo Flores Magón",
-        "ap_ext_number": "231",
-        "ap_int_number": "534",
-        "ap_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1629406164/Portfolio/appartify-assets/photos/apart-00006/apart-006-photo-001_g5c1jc.jpg",
-        "ap_alt": "Cover: Apartment #6",
-        "rel_neighborhood": {
-            "ne_neighborhood": 2,
-            "ne_name": "Hipódromo Condesa",
-            "ne_abbr": "HCON",
-            "ne_url": "",
-            "ne_alt": ""
-        },
-        "rel_city": {
-            "ci_city": 1,
-            "ci_name": "Ciudad de México",
-            "ci_abbr": "CDMX",
-            "ci_url": "",
-            "ci_alt": ""
-        },
-        "rel_city_hall": {
-            "ch_city_hall": 1,
-            "ch_name": "Cuauhtémoc",
-            "ch_abbr": "CUA",
-            "ch_url": "",
-            "ch_alt": ""
-        },
-        "rel_country": {
-            "co_country": 1,
-            "co_name": "Mexico",
-            "co_abbr": "MX",
-            "co_url": "",
-            "co_alt": ""
-        },
-        "rel_state": {
-            "st_state": 1,
-            "st_name": "Estado de México",
-            "st_abbr": "ECDMX",
-            "st_url": "",
-            "st_alt": ""
-        },
-        "rel_features": [
-            {
-                "fe_feature": 1,
-                "fe_type": "Number",
-                "fe_name": "Tamaño",
-                "fe_icon_code": "icon-floor-plan",
-                "fe_icon_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1627705301/Portfolio/appartify-assets/svg/room-plan_vyen5l.svg",
-                "fe_icon_color": "#FF9671",
-                "fe_is_in_card": true,
-                "att_value": "98 m²",
-                "att_is_visible": true,
-                "att_is_card": true
-            },
-            {
-                "fe_feature": 2,
-                "fe_type": "Number",
-                "fe_name": "Habitaciones",
-                "fe_icon_code": "icon-bedroom",
-                "fe_icon_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1627705301/Portfolio/appartify-assets/svg/room-furniture_zz4hiz.svg",
-                "fe_icon_color": "#D65DB1",
-                "fe_is_in_card": true,
-                "att_value": "2",
-                "att_is_visible": true,
-                "att_is_card": true
-            },
-            {
-                "fe_feature": 3,
-                "fe_type": "Number",
-                "fe_name": "Lugares de estacionamientos",
-                "fe_icon_code": "icon-parking",
-                "fe_icon_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1627705301/Portfolio/appartify-assets/svg/car_afbqde.svg",
-                "fe_icon_color": "#0089BA",
-                "fe_is_in_card": true,
-                "att_value": "1",
-                "att_is_visible": true,
-                "att_is_card": true
-            },
-            {
-                "fe_feature": 4,
-                "fe_type": "Number",
-                "fe_name": "Bathrooms",
-                "fe_icon_code": "icon-bathroom",
-                "fe_icon_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1627705301/Portfolio/appartify-assets/svg/bathtub_kmoorx.svg",
-                "fe_icon_color": "#C34A36",
-                "fe_is_in_card": true,
-                "att_value": "2",
-                "att_is_visible": true,
-                "att_is_card": true
-            },
-            {
-                "fe_feature": 5,
-                "fe_type": "String",
-                "fe_name": "Tipo de Propiedad",
-                "fe_icon_code": "icon-property-type",
-                "fe_icon_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1627705301/Portfolio/appartify-assets/svg/bathtub_kmoorx.svg",
-                "fe_icon_color": "#00C9A7",
-                "fe_is_in_card": false,
-                "att_value": "Departamento",
-                "att_is_visible": true,
-                "att_is_card": false
-            },
-            {
-                "fe_feature": 6,
-                "fe_type": "Number",
-                "fe_name": "Año de construcción",
-                "fe_icon_code": "icon-year-built",
-                "fe_icon_url": "",
-                "fe_icon_color": "#257A3E",
-                "fe_is_in_card": false,
-                "att_value": "2020",
-                "att_is_visible": true,
-                "att_is_card": false
-            }
-        ],
-        "rel_photos": [
-            {
-                "ph_photo": 16,
-                "ph_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1629406165/Portfolio/appartify-assets/photos/apart-00006/apart-006-photo-002_qmjnfc.jpg",
-                "ph_alt": "Room-002",
-                "ph_is_cover": false
-            },
-            {
-                "ph_photo": 17,
-                "ph_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1629406164/Portfolio/appartify-assets/photos/apart-00006/apart-006-photo-003_ghufpv.jpg",
-                "ph_alt": "Room-003",
-                "ph_is_cover": false
-            },
-            {
-                "ph_photo": 18,
-                "ph_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1629406164/Portfolio/appartify-assets/photos/apart-00006/apart-006-photo-001_g5c1jc.jpg",
-                "ph_alt": "Room-001",
-                "ph_is_cover": true
-            }
-        ],
-        "rel_outdoor_spaces": [
-            {
-                "os_outdoor_space": 31,
-                "ou_type": "Number",
-                "ou_name": "Nivel",
-                "ou_icon_url": "",
-                "ou_icon_color": "",
-                "out_value": "4",
-                "out_is_visible": true,
-                "out_is_card": true
-            },
-            {
-                "os_outdoor_space": 32,
-                "ou_type": "string",
-                "ou_name": "Balcón",
-                "ou_icon_url": "",
-                "ou_icon_color": "",
-                "out_value": "Sí",
-                "out_is_visible": true,
-                "out_is_card": true
-            },
-            {
-                "os_outdoor_space": 33,
-                "ou_type": "string",
-                "ou_name": "Elevador",
-                "ou_icon_url": "",
-                "ou_icon_color": "",
-                "out_value": "Sí",
-                "out_is_visible": true,
-                "out_is_card": true
-            },
-            {
-                "os_outdoor_space": 34,
-                "ou_type": "string",
-                "ou_name": "Seguridad",
-                "ou_icon_url": "",
-                "ou_icon_color": "",
-                "out_value": "Sí",
-                "out_is_visible": true,
-                "out_is_card": true
-            },
-            {
-                "os_outdoor_space": 35,
-                "ou_type": "string",
-                "ou_name": "Rooftop",
-                "ou_icon_url": "",
-                "ou_icon_color": "",
-                "out_value": "Sí",
-                "out_is_visible": true,
-                "out_is_card": true
-            },
-            {
-                "os_outdoor_space": 36,
-                "ou_type": "string",
-                "ou_name": "Terraza privada",
-                "ou_icon_url": "",
-                "ou_icon_color": "",
-                "out_value": "No",
-                "out_is_visible": true,
-                "out_is_card": true
-            }
-        ]
-    }
+  "model": "app_as_api.apartment",
+  "pk": 6,
+  "fields": {
+    "ap_description": "Es un #DepaApartify que se encuentra ubicado en la Av. Ricardo Flores Magón en el piso #4 además de un elevador. Tiene una sala, dos dormitorios, una cocina y un comedor en 98 m² además de tener un lugar de estacionamiento. Este depa podrás gozar de una hermosa vista del balcón que tiene acceso por el dormitorio. Es ideal para tí y estamos seguros que te encantará. Con facil acceso a vias de transporte como: Calle Pedral y Nogal. A sus alrededores cuenta con: la Bodega Aurrera Express Los Gallos, tienda de alimentacion 'Yadis' y gasolinera PEMEX.",
+    "ap_floor_number": 4,
+    "ap_cost_offer": "$4,321.432",
+    "ap_cost_list": "$5,543.645",
+    "ap_is_remodeling": true,
+    "ap_latitude": 19.455464,
+    "ap_longitude": -99.16184,
+    "ap_street_name": "Av. Ricardo Flores Magón",
+    "ap_ext_number": "231",
+    "ap_int_number": "534",
+    "ap_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1629406164/Portfolio/appartify-assets/photos/apart-00006/apart-006-photo-001_g5c1jc.jpg",
+    "ap_alt": "Cover: Apartment #6",
+    "rel_neighborhood": {
+      "ne_neighborhood": 2,
+      "ne_name": "Hipódromo Condesa",
+      "ne_abbr": "HCON",
+      "ne_url": "",
+      "ne_alt": ""
+    },
+    "rel_city": {
+      "ci_city": 1,
+      "ci_name": "Ciudad de México",
+      "ci_abbr": "CDMX",
+      "ci_url": "",
+      "ci_alt": ""
+    },
+    "rel_city_hall": {
+      "ch_city_hall": 1,
+      "ch_name": "Cuauhtémoc",
+      "ch_abbr": "CUA",
+      "ch_url": "",
+      "ch_alt": ""
+    },
+    "rel_country": {
+      "co_country": 1,
+      "co_name": "Mexico",
+      "co_abbr": "MX",
+      "co_url": "",
+      "co_alt": ""
+    },
+    "rel_state": {
+      "st_state": 1,
+      "st_name": "Estado de México",
+      "st_abbr": "ECDMX",
+      "st_url": "",
+      "st_alt": ""
+    },
+    "rel_features": [
+      {
+        "fe_feature": 1,
+        "fe_type": "Number",
+        "fe_name": "Tamaño",
+        "fe_icon_code": "icon-floor-plan",
+        "fe_icon_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1627705301/Portfolio/appartify-assets/svg/room-plan_vyen5l.svg",
+        "fe_icon_color": "#FF9671",
+        "fe_is_in_card": true,
+        "att_value": "98 m²",
+        "att_is_visible": true,
+        "att_is_card": true
+      },
+      {
+        "fe_feature": 2,
+        "fe_type": "Number",
+        "fe_name": "Habitaciones",
+        "fe_icon_code": "icon-bedroom",
+        "fe_icon_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1627705301/Portfolio/appartify-assets/svg/room-furniture_zz4hiz.svg",
+        "fe_icon_color": "#D65DB1",
+        "fe_is_in_card": true,
+        "att_value": "2",
+        "att_is_visible": true,
+        "att_is_card": true
+      },
+      {
+        "fe_feature": 3,
+        "fe_type": "Number",
+        "fe_name": "Lugares de estacionamientos",
+        "fe_icon_code": "icon-parking",
+        "fe_icon_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1627705301/Portfolio/appartify-assets/svg/car_afbqde.svg",
+        "fe_icon_color": "#0089BA",
+        "fe_is_in_card": true,
+        "att_value": "1",
+        "att_is_visible": true,
+        "att_is_card": true
+      },
+      {
+        "fe_feature": 4,
+        "fe_type": "Number",
+        "fe_name": "Bathrooms",
+        "fe_icon_code": "icon-bathroom",
+        "fe_icon_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1627705301/Portfolio/appartify-assets/svg/bathtub_kmoorx.svg",
+        "fe_icon_color": "#C34A36",
+        "fe_is_in_card": true,
+        "att_value": "2",
+        "att_is_visible": true,
+        "att_is_card": true
+      },
+      {
+        "fe_feature": 5,
+        "fe_type": "String",
+        "fe_name": "Tipo de Propiedad",
+        "fe_icon_code": "icon-property-type",
+        "fe_icon_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1627705301/Portfolio/appartify-assets/svg/bathtub_kmoorx.svg",
+        "fe_icon_color": "#00C9A7",
+        "fe_is_in_card": false,
+        "att_value": "Departamento",
+        "att_is_visible": true,
+        "att_is_card": false
+      },
+      {
+        "fe_feature": 6,
+        "fe_type": "Number",
+        "fe_name": "Año de construcción",
+        "fe_icon_code": "icon-year-built",
+        "fe_icon_url": "",
+        "fe_icon_color": "#257A3E",
+        "fe_is_in_card": false,
+        "att_value": "2020",
+        "att_is_visible": true,
+        "att_is_card": false
+      }
+    ],
+    "rel_photos": [
+      {
+        "ph_photo": 16,
+        "ph_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1629406165/Portfolio/appartify-assets/photos/apart-00006/apart-006-photo-002_qmjnfc.jpg",
+        "ph_alt": "Room-002",
+        "ph_is_cover": false
+      },
+      {
+        "ph_photo": 17,
+        "ph_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1629406164/Portfolio/appartify-assets/photos/apart-00006/apart-006-photo-003_ghufpv.jpg",
+        "ph_alt": "Room-003",
+        "ph_is_cover": false
+      },
+      {
+        "ph_photo": 18,
+        "ph_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1629406164/Portfolio/appartify-assets/photos/apart-00006/apart-006-photo-001_g5c1jc.jpg",
+        "ph_alt": "Room-001",
+        "ph_is_cover": true
+      }
+    ],
+    "rel_outdoor_spaces": [
+      {
+        "os_outdoor_space": 31,
+        "ou_type": "Number",
+        "ou_name": "Nivel",
+        "ou_icon_url": "",
+        "ou_icon_color": "",
+        "out_value": "4",
+        "out_is_visible": true,
+        "out_is_card": true
+      },
+      {
+        "os_outdoor_space": 32,
+        "ou_type": "string",
+        "ou_name": "Balcón",
+        "ou_icon_url": "",
+        "ou_icon_color": "",
+        "out_value": "Sí",
+        "out_is_visible": true,
+        "out_is_card": true
+      },
+      {
+        "os_outdoor_space": 33,
+        "ou_type": "string",
+        "ou_name": "Elevador",
+        "ou_icon_url": "",
+        "ou_icon_color": "",
+        "out_value": "Sí",
+        "out_is_visible": true,
+        "out_is_card": true
+      },
+      {
+        "os_outdoor_space": 34,
+        "ou_type": "string",
+        "ou_name": "Seguridad",
+        "ou_icon_url": "",
+        "ou_icon_color": "",
+        "out_value": "Sí",
+        "out_is_visible": true,
+        "out_is_card": true
+      },
+      {
+        "os_outdoor_space": 35,
+        "ou_type": "string",
+        "ou_name": "Rooftop",
+        "ou_icon_url": "",
+        "ou_icon_color": "",
+        "out_value": "Sí",
+        "out_is_visible": true,
+        "out_is_card": true
+      },
+      {
+        "os_outdoor_space": 36,
+        "ou_type": "string",
+        "ou_name": "Terraza privada",
+        "ou_icon_url": "",
+        "ou_icon_color": "",
+        "out_value": "No",
+        "out_is_visible": true,
+        "out_is_card": true
+      }
+    ]
+  }
 }
