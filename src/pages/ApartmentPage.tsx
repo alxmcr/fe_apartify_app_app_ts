@@ -3,8 +3,9 @@ import { LoadingStates } from '../@types/service/enumsService';
 import MainContentApartment from '../components/apartment-page/MainContentApartment';
 import ApartmentDescriptionSection from '../components/apartment-page/sections/ApartmentDescriptionSection';
 import ApartmentFeaturesDetailsSection from '../components/apartment-page/sections/ApartmentFeaturesDetailsSection';
-import { useLocalApartment } from '../hooks/apartments/local/useLocalApartment';
+import ApartmentInvestmentsSection from '../components/apartment-page/sections/ApartmentInvestmentsSection';
 import ApartmentOutdoorsDetailsSection from '../components/apartment-page/sections/ApartmentOutdoorsSection';
+import { useLocalApartment } from '../hooks/apartments/local/useLocalApartment';
 
 export default function ApartmentPage() {
   const { id } = useParams();
@@ -25,6 +26,7 @@ export default function ApartmentPage() {
         <ApartmentDescriptionSection apartment={apartment} />
         <ApartmentFeaturesDetailsSection apartment={apartment} />
         <ApartmentOutdoorsDetailsSection apartment={apartment} />
+        <ApartmentInvestmentsSection apartment={apartment} />
       </main>
     );
   }
