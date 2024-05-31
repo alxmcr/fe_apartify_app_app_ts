@@ -1,12 +1,12 @@
 import { LocalApartmentData } from '../../../@types/service/serviceTypes';
-import ListFeaturesApartment from '../../@apartment/ListFeaturesApartment';
+import ListOutdoorsApartment from '../../@apartment/ListOutdoorsApartment';
 import BaseSection from '../../BaseSection';
 
 type Props = {
   apartment: LocalApartmentData;
 };
 
-export default function ApartmentFeaturesDetailsSection({ apartment }: Props) {
+export default function ApartmentOutdoorsDetailsSection({ apartment }: Props) {
   if (apartment === null || apartment === undefined) {
     return null;
   }
@@ -14,8 +14,8 @@ export default function ApartmentFeaturesDetailsSection({ apartment }: Props) {
   return (
     <BaseSection>
       <div className="flex flex-col gap-3 py-4">
-        <h2 className="text-[32px] font-bold text-electric-violet-600">Features</h2>
-        <ListFeaturesApartment features={apartment.rel_features} />
+        <h2 className="text-[32px] font-bold text-electric-violet-600">Outdoor spaces</h2>
+        <ListOutdoorsApartment outdoors={apartment.rel_outdoor_spaces} />
       </div>
     </BaseSection>
   );
