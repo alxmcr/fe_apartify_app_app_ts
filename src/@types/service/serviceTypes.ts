@@ -42,6 +42,17 @@ export type LocalOutdoorSpaceData = {
   out_is_card: boolean;
 };
 
+export type LocalInvestmentData = {
+  inve_invest: number;
+  in_type: string;
+  in_name: string;
+  in_icon_url: string;
+  in_icon_color: string;
+  inv_value: string;
+  inv_is_visible: boolean;
+  inv_is_card: boolean;
+};
+
 export type LocalApartmentData = {
   ap_apartment: number;
   ap_description: string;
@@ -64,6 +75,7 @@ export type LocalApartmentData = {
   rel_features: LocalAttributeData[];
   rel_photos: LocalPhotoData[];
   rel_outdoor_spaces: LocalOutdoorSpaceData[];
+  rel_invests: LocalInvestmentData[];
 };
 
 export type LocalApartmentFields = {
@@ -87,6 +99,7 @@ export type LocalApartmentFields = {
   rel_features: LocalAttributeData[];
   rel_photos: LocalPhotoData[];
   rel_outdoor_spaces: LocalOutdoorSpaceData[];
+  rel_invests: LocalInvestmentData[];
 };
 
 export type MockApartmentData = {
