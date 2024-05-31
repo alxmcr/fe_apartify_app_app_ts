@@ -4,6 +4,7 @@ import MainContentApartment from '../components/apartment-page/MainContentApartm
 import ApartmentDescriptionSection from '../components/apartment-page/sections/ApartmentDescriptionSection';
 import ApartmentFeaturesDetailsSection from '../components/apartment-page/sections/ApartmentFeaturesDetailsSection';
 import { useLocalApartment } from '../hooks/apartments/local/useLocalApartment';
+import ApartmentOutdoorsDetailsSection from '../components/apartment-page/sections/ApartmentOutdoorsSection';
 
 export default function ApartmentPage() {
   const { id } = useParams();
@@ -23,7 +24,7 @@ export default function ApartmentPage() {
         <MainContentApartment apartment={apartment} />
         <ApartmentDescriptionSection apartment={apartment} />
         <ApartmentFeaturesDetailsSection apartment={apartment} />
-        <pre>{JSON.stringify(apartment.rel_outdoor_spaces, null, 2)}</pre>
+        <ApartmentOutdoorsDetailsSection apartment={apartment} />
       </main>
     );
   }
