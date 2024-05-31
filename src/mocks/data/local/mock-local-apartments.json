@@ -119,6 +119,68 @@
           "ph_alt": "Room-001",
           "ph_is_cover": true
         }
+      ],
+      "rel_outdoor_spaces": [
+        {
+          "os_outdoor_space": 1,
+          "ou_type": "Number",
+          "ou_name": "Nivel",
+          "ou_icon_url": "",
+          "ou_icon_color": "",
+          "out_value": "8",
+          "out_is_visible": true,
+          "out_is_card": true
+        },
+        {
+          "os_outdoor_space": 2,
+          "ou_type": "string",
+          "ou_name": "Balcón",
+          "ou_icon_url": "",
+          "ou_icon_color": "",
+          "out_value": "Sí",
+          "out_is_visible": true,
+          "out_is_card": true
+        },
+        {
+          "os_outdoor_space": 3,
+          "ou_type": "string",
+          "ou_name": "Elevador",
+          "ou_icon_url": "",
+          "ou_icon_color": "",
+          "out_value": "Sí",
+          "out_is_visible": true,
+          "out_is_card": true
+        },
+        {
+          "os_outdoor_space": 4,
+          "ou_type": "string",
+          "ou_name": "Seguridad",
+          "ou_icon_url": "",
+          "ou_icon_color": "",
+          "out_value": "Sí",
+          "out_is_visible": true,
+          "out_is_card": true
+        },
+        {
+          "os_outdoor_space": 5,
+          "ou_type": "string",
+          "ou_name": "Rooftop",
+          "ou_icon_url": "",
+          "ou_icon_color": "",
+          "out_value": "Sí",
+          "out_is_visible": true,
+          "out_is_card": true
+        },
+        {
+          "os_outdoor_space": 6,
+          "ou_type": "string",
+          "ou_name": "Terraza privada",
+          "ou_icon_url": "",
+          "ou_icon_color": "",
+          "out_value": "No",
+          "out_is_visible": true,
+          "out_is_card": true
+        }
       ]
     }
   },
@@ -265,6 +327,68 @@
           "ph_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1629407431/Portfolio/appartify-assets/photos/apart-00002/apart-002-photo-001_zk4puc.jpg",
           "ph_alt": "Room-001",
           "ph_is_cover": true
+        }
+      ],
+      "rel_outdoor_spaces": [
+        {
+          "os_outdoor_space": 7,
+          "ou_type": "Number",
+          "ou_name": "Nivel",
+          "ou_icon_url": "",
+          "ou_icon_color": "",
+          "out_value": "3",
+          "out_is_visible": true,
+          "out_is_card": true
+        },
+        {
+          "os_outdoor_space": 8,
+          "ou_type": "string",
+          "ou_name": "Balcón",
+          "ou_icon_url": "",
+          "ou_icon_color": "",
+          "out_value": "Sí",
+          "out_is_visible": true,
+          "out_is_card": true
+        },
+        {
+          "os_outdoor_space": 9,
+          "ou_type": "string",
+          "ou_name": "Elevador",
+          "ou_icon_url": "",
+          "ou_icon_color": "",
+          "out_value": "Sí",
+          "out_is_visible": true,
+          "out_is_card": true
+        },
+        {
+          "os_outdoor_space": 10,
+          "ou_type": "string",
+          "ou_name": "Seguridad",
+          "ou_icon_url": "",
+          "ou_icon_color": "",
+          "out_value": "Sí",
+          "out_is_visible": true,
+          "out_is_card": true
+        },
+        {
+          "os_outdoor_space": 11,
+          "ou_type": "string",
+          "ou_name": "Rooftop",
+          "ou_icon_url": "",
+          "ou_icon_color": "",
+          "out_value": "Sí",
+          "out_is_visible": true,
+          "out_is_card": true
+        },
+        {
+          "os_outdoor_space": 12,
+          "ou_type": "string",
+          "ou_name": "Terraza privada",
+          "ou_icon_url": "",
+          "ou_icon_color": "",
+          "out_value": "No",
+          "out_is_visible": true,
+          "out_is_card": true
         }
       ]
     }
@@ -414,6 +538,48 @@
           "ph_is_cover": true,
           "ap_apartment": 3
         }
+      ],
+      "rel_outdoor_spaces": [
+        {
+          "os_outdoor_space": 13,
+          "ou_type": "string",
+          "ou_name": "Elevador",
+          "ou_icon_url": "",
+          "ou_icon_color": "",
+          "out_value": "Sí",
+          "out_is_visible": true,
+          "out_is_card": true
+        },
+        {
+          "os_outdoor_space": 14,
+          "ou_type": "string",
+          "ou_name": "Seguridad",
+          "ou_icon_url": "",
+          "ou_icon_color": "",
+          "out_value": "Sí",
+          "out_is_visible": true,
+          "out_is_card": true
+        },
+        {
+          "os_outdoor_space": 15,
+          "ou_type": "string",
+          "ou_name": "Rooftop",
+          "ou_icon_url": "",
+          "ou_icon_color": "",
+          "out_value": "Sí",
+          "out_is_visible": true,
+          "out_is_card": true
+        },
+        {
+          "os_outdoor_space": 16,
+          "ou_type": "string",
+          "ou_name": "Terraza privada",
+          "ou_icon_url": "",
+          "ou_icon_color": "",
+          "out_value": "No",
+          "out_is_visible": true,
+          "out_is_card": true
+        }
       ]
     }
   },
@@ -561,6 +727,68 @@
           "ph_url": "https://res.cloudinary.com/images-alex-projects/image/upload/v1629407500/Portfolio/appartify-assets/photos/apart-00004/apart-004-photo-001_zqybnl.jpg",
           "ph_alt": "Room-001",
           "ph_is_cover": true
+        }
+      ],
+      "rel_outdoor_spaces": [
+        {
+          "os_outdoor_space": 17,
+          "ou_type": "Number",
+          "ou_name": "Nivel",
+          "ou_icon_url": "",
+          "ou_icon_color": "",
+          "out_value": "7",
+          "out_is_visible": true,
+          "out_is_card": true
+        },
+        {
+          "os_outdoor_space": 18,
+          "ou_type": "string",
+          "ou_name": "Balcón",
+          "ou_icon_url": "",
+          "ou_icon_color": "",
+          "out_value": "Sí",
+          "out_is_visible": true,
+          "out_is_card": true
+        },
+        {
+          "os_outdoor_space": 19,
+          "ou_type": "string",
+          "ou_name": "Elevador",
+          "ou_icon_url": "",
+          "ou_icon_color": "",
+          "out_value": "Sí",
+          "out_is_visible": true,
+          "out_is_card": true
+        },
+        {
+          "os_outdoor_space": 20,
+          "ou_type": "string",
+          "ou_name": "Seguridad",
+          "ou_icon_url": "",
+          "ou_icon_color": "",
+          "out_value": "Sí",
+          "out_is_visible": true,
+          "out_is_card": true
+        },
+        {
+          "os_outdoor_space": 21,
+          "ou_type": "string",
+          "ou_name": "Rooftop",
+          "ou_icon_url": "",
+          "ou_icon_color": "",
+          "out_value": "Sí",
+          "out_is_visible": true,
+          "out_is_card": true
+        },
+        {
+          "os_outdoor_space": 22,
+          "ou_type": "string",
+          "ou_name": "Terraza privada",
+          "ou_icon_url": "",
+          "ou_icon_color": "",
+          "out_value": "No",
+          "out_is_visible": true,
+          "out_is_card": true
         }
       ]
     }
