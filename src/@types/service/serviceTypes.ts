@@ -76,6 +76,8 @@ export type LocalApartmentData = {
   rel_photos: LocalPhotoData[];
   rel_outdoor_spaces: LocalOutdoorSpaceData[];
   rel_invests: LocalInvestmentData[];
+  fp_url: string;
+  fp_alt: string;
 };
 
 export type LocalApartmentFields = {
@@ -100,6 +102,8 @@ export type LocalApartmentFields = {
   rel_photos: LocalPhotoData[];
   rel_outdoor_spaces: LocalOutdoorSpaceData[];
   rel_invests: LocalInvestmentData[];
+  fp_url: string;
+  fp_alt: string;
 };
 
 export type MockApartmentData = {
