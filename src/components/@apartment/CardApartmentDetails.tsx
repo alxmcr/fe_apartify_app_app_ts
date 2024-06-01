@@ -10,7 +10,7 @@ export default function CardApartmentDetails({ apartment }: Props) {
   }
 
   return (
-    <article className="flex h-[250px] w-full flex-col gap-[30px] rounded-lg border p-[8px] md:h-[290px] md:p-[16px] lg:w-[288px]">
+    <article className="flex h-[250px] w-full flex-col gap-[30px] rounded-lg border p-[8px] md:h-[290px] md:p-[16px]">
       <header className="flex items-center justify-between">
         <div className="flex flex-col gap-1">
           <h3 className="text-[14px] text-light-400 md:text-[18px]">DISCOUNTED PRICE</h3>
