@@ -26,7 +26,7 @@ export default function ApartmentPage() {
       <main className="flex flex-col gap-8">
         <MainContentApartment apartment={apartment} />
 
-        <div id={id} className="flex justify-center md:px-[40px] lg:px-0">
+        <div id={id} className="flex justify-center md:px-[40px] lg:px-0 lg:py-6">
           <div className="w-full lg:w-[1028px]">
             <div className="flex flex-wrap justify-center">
               <div className="w-full pr-6 lg:w-2/3">
