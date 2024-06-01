@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { LoadingStates } from '../@types/service/enumsService';
 import MainContentApartment from '../components/apartment-page/MainContentApartment';
+import ApartmentFloorPlanSection from '../components/apartment-page/sections/AparmentFloorPlanSection';
 import ApartmentDescriptionSection from '../components/apartment-page/sections/ApartmentDescriptionSection';
 import ApartmentFeaturesDetailsSection from '../components/apartment-page/sections/ApartmentFeaturesDetailsSection';
 import ApartmentInvestmentsSection from '../components/apartment-page/sections/ApartmentInvestmentsSection';
@@ -27,7 +28,7 @@ export default function ApartmentPage() {
         <ApartmentFeaturesDetailsSection apartment={apartment} />
         <ApartmentOutdoorsDetailsSection apartment={apartment} />
         <ApartmentInvestmentsSection apartment={apartment} />
-        <pre>{JSON.stringify({ x: apartment.fp_url, y: apartment.fp_alt }, null, 2)}</pre>
+        <ApartmentFloorPlanSection apartment={apartment} />
       </main>
     );
   }
