@@ -7,6 +7,7 @@ import ApartmentFeaturesDetailsSection from '../components/apartment-page/sectio
 import ApartmentInvestmentsSection from '../components/apartment-page/sections/ApartmentInvestmentsSection';
 import ApartmentOutdoorsDetailsSection from '../components/apartment-page/sections/ApartmentOutdoorsSection';
 import { useLocalApartment } from '../hooks/apartments/local/useLocalApartment';
+import CardApartmentDetails from '../components/@apartment/CardApartmentDetails';
 
 export default function ApartmentPage() {
   const { id } = useParams();
@@ -29,6 +30,7 @@ export default function ApartmentPage() {
         <ApartmentOutdoorsDetailsSection apartment={apartment} />
         <ApartmentInvestmentsSection apartment={apartment} />
         <ApartmentFloorPlanSection apartment={apartment} />
+        <CardApartmentDetails apartment={apartment} />
       </main>
     );
   }
