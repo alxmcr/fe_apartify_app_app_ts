@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { LoadingStates } from '../@types/service/enumsService';
+import CardApartmentDetails from '../components/@apartment/CardApartmentDetails';
 import MainContentApartment from '../components/apartment-page/MainContentApartment';
 import ApartmentFloorPlanSection from '../components/apartment-page/sections/AparmentFloorPlanSection';
 import ApartmentDescriptionSection from '../components/apartment-page/sections/ApartmentDescriptionSection';
@@ -24,11 +25,25 @@ export default function ApartmentPage() {
     return (
       <main className="flex flex-col gap-8">
         <MainContentApartment apartment={apartment} />
-        <ApartmentDescriptionSection apartment={apartment} />
-        <ApartmentFeaturesDetailsSection apartment={apartment} />
-        <ApartmentOutdoorsDetailsSection apartment={apartment} />
-        <ApartmentInvestmentsSection apartment={apartment} />
-        <ApartmentFloorPlanSection apartment={apartment} />
+
+        <div id={id} className="flex justify-center md:px-[40px] lg:px-0 lg:py-6">
+          <div className="w-full lg:w-[1028px]">
+            <div className="flex flex-wrap justify-center">
+              <div className="w-full pr-6 lg:w-2/3">
+                <div className="flex flex-col gap-8">
+                  <ApartmentDescriptionSection apartment={apartment} />
+                  <ApartmentFeaturesDetailsSection apartment={apartment} />
+                  <ApartmentOutdoorsDetailsSection apartment={apartment} />
+                  <ApartmentInvestmentsSection apartment={apartment} />
+                  <ApartmentFloorPlanSection apartment={apartment} />
+                </div>
+              </div>
+              <div className="w-full lg:w-1/3">
+                <CardApartmentDetails apartment={apartment} />
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
     );
   }
