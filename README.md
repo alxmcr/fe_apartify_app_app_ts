@@ -35,19 +35,19 @@ Start the server
 
 - Home page
 
-![Home page](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Home page](https://apartify-app.netlify.com/screenshots/apartify-home-page.png)
 
 - Listings page
 
-![Listings page](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Listings page](https://apartify-app.netlify.com/screenshots/apartify-listings-page.png)
 
 - Apartment page
 
-![Apartment page](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Apartment page](https://apartify-app.netlify.com/screenshots/apartify-apartment-page.png)
 
 - Not Found - 404 section
 
-![Not Found page](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Not Found page](https://apartify-app.netlify.com/screenshots/apartify-notfound-page.png)
 
 
 
