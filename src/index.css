@@ -4,19 +4,19 @@
 
 @layer components {
   .scrollbar-app::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 1px theme('colors.perano.500');
-    -webkit-box-shadow: inset 0 0 1px theme('colors.perano.500');
-    background-color: theme('colors.light.50');
+    box-shadow: inset 0 0 1px var(--color-perano-500);
+    -webkit-box-shadow: inset 0 0 1px var(--color-perano-500);
+    background-color: var(--color-light-50);
   }
   .scrollbar-app::-webkit-scrollbar {
     height: 4px;
     width: 5px;
-    background-color: theme('colors.light.50');
+    background-color: var(--color-light-50);
   }
   .scrollbar-app::-webkit-scrollbar-thumb {
     height: 4px;
     width: 1px;
-    background-color: theme('colors.perano.500');
+    background-color: var(--color-perano-500);
   }
 
   /* Player: Progress bar */
